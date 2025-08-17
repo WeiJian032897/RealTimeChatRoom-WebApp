@@ -1,0 +1,161 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm1.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm1.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm10.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm10.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm11.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm11.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm12.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm12.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm2.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm2.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm3.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm3.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm4.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm4.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm5.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm5.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm6.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm6.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm7.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm7.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm8.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm8.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm9.mp3",
+      "PackagePath": "staticwebassets\\audio\\bgm9.mp3"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav",
+      "PackagePath": "staticwebassets\\audio\\message-received.wav"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav",
+      "PackagePath": "staticwebassets\\audio\\message-sent.wav"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav",
+      "PackagePath": "staticwebassets\\audio\\user-join.wav"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav",
+      "PackagePath": "staticwebassets\\audio\\user-leave.wav"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html",
+      "PackagePath": "staticwebassets\\chat.html"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt",
+      "PackagePath": "staticwebassets\\emoji.txt"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\default-avatar.png",
+      "PackagePath": "staticwebassets\\image\\default-avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon.png",
+      "PackagePath": "staticwebassets\\image\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon1.png",
+      "PackagePath": "staticwebassets\\image\\favicon1.png"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg4.jpg",
+      "PackagePath": "staticwebassets\\img\\bg4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg5.jpg",
+      "PackagePath": "staticwebassets\\img\\bg5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg6.jpg",
+      "PackagePath": "staticwebassets\\img\\bg6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg7.jpg",
+      "PackagePath": "staticwebassets\\img\\bg7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg8.jpg",
+      "PackagePath": "staticwebassets\\img\\bg8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt",
+      "PackagePath": "staticwebassets\\rudewords.txt"
+    },
+    {
+      "Id": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt",
+      "PackagePath": "staticwebassets\\usernames.txt"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ChatRT.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ChatRT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.ChatRT.props",
+      "PackagePath": "build\\ChatRT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.ChatRT.props",
+      "PackagePath": "buildMultiTargeting\\ChatRT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.ChatRT.props",
+      "PackagePath": "buildTransitive\\ChatRT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

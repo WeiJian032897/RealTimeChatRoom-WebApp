@@ -1,0 +1,4244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <title>Chat Universe</title>
+    <link href="image/favicon1.png" rel="shortcut icon">
+    <link href="css/app.css" rel="stylesheet">
+    <style>
+        main {
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .active {
+            outline: 5px dashed red;
+            outline-offset: -5px;
+        }
+
+        .image {
+            max-width: 200px;
+            max-height: 200px;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        .image:fullscreen {
+            object-fit: scale-down !important;
+            border: none !important;
+            background: #000 !important;
+        }
+        
+       
+        .video-player {
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            background-color: #000;
+            margin: 8px 0;
+        }
+
+        .video-player:fullscreen {
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        /* Textarea styles */
+        textarea#message {
+            resize: none;
+            padding: 5px;
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 38px;
+            max-height: 150px;
+            overflow-y: hidden;
+        }
+
+        
+        .message-content strong {
+            font-weight: bold;
+            color: #000;
+        }
+        
+        .message-content em {
+            font-style: italic;
+            color: #333;
+        }
+        
+        .message-content u {
+            text-decoration: underline;
+            text-decoration-color: #555;
+            text-decoration-thickness: 1px;
+        }
+        
+        
+        .message-content strong em,
+        .message-content em strong {
+            font-weight: bold;
+            font-style: italic;
+            color: #000;
+        }
+        
+        .message-content strong u,
+        .message-content u strong {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #000;
+        }
+        
+        .message-content em u,
+        .message-content u em {
+            font-style: italic;
+            text-decoration: underline;
+            color: #333;
+        }
+        
+        .message-content strong em u,
+        .message-content strong u em,
+        .message-content em strong u,
+        .message-content em u strong,
+        .message-content u strong em,
+        .message-content u em strong {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            color: #000;
+        }
+        
+        
+        #format-tips {
+            position: absolute;
+            bottom: -20px;
+            left: 10px;
+            font-size: 12px;
+            color: #666;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2px 5px;
+            border-radius: 3px;
+            z-index: 10;
+        }
+        
+        footer form {
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        /* Message styles */
+        #chat {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #chat li {
+            margin: 8px 0;
+            padding: 0 15px;
+            position: relative;
+        }
+
+        #chat li.caller {
+            text-align: right;
+        }
+
+        #chat li.others {
+            text-align: left;
+        }
+
+        #chat li.status {
+            text-align: center;
+            color: #666;
+            margin: 16px 0;
+        }
+
+        #chat .message.status {
+            background-color: rgba(255, 213, 79, 0.3);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #666;
+            display: inline-block;
+        }
+
+       
+
+       
+        #chat .name {
+            display: block;
+            font-size: 0.85em;
+            margin: 0 12px 4px 12px;
+            font-weight: bold;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7), 
+                         0 0 3px rgba(0, 0, 0, 0.5),
+                         0 0 5px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            letter-spacing: 0.5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+        }
+
+        #chat li.caller .name {
+            text-align: right;
+            background-color: rgba(174, 213, 129, 0.7);
+            color: #fff;
+            border-color: rgba(174, 213, 129, 0.3);
+        }
+
+        #chat li.others .name {
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        #chat li.status .name {
+            font-weight: bold;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7),
+                         0 0 3px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 193, 7, 0.3);
+            color: #fff;
+            border-color: rgba(255, 193, 7, 0.3);
+        }
+
+        
+        #chat .name:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        
+
+        #chat li.status .message {
+            background-color: #ffd54f;
+            padding: 4px 12px;
+            border-radius: 15px;
+        }
+
+       
+        #dialog {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        #dialog::backdrop {
+            background: #0009;
+        }
+
+        #dialog form {
+            margin-bottom: 5px;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        #container .image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        #btn {
+            anchor-name: --btn;
+        }
+
+        #pop {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 5px;
+
+            inset: unset;
+            top: anchor(--btn top);
+            right: anchor(--btn left);
+            translate: -5px;
+        }
+
+        
+        #bgm-btn {
+            margin-left: 10px;
+            padding: 3px 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background: none;
+            border: 2px solid #aed581;
+            border-radius: 50%;
+            color: #333;
+            opacity: 0.9;
+            transition: all 0.3s;
+        }
+
+        #bgm-btn:hover {
+            opacity: 1;
+            background: #aed581;
+            color: white;
+        }
+
+        #bgm-btn.playing {
+            background: #aed581;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+       
+        #music-pop {
+            min-width: 200px;
+            padding: 10px;
+            background: #333;
+            border: 1px solid #666;
+            border-radius: 8px;
+            color: #fff;
+        }
+
+        
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 10px 0;
+            padding: 5px 10px;
+            border-bottom: 1px solid #666;
+        }
+
+        .volume-control label {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        .volume-control input[type="range"] {
+            flex: 1;
+            height: 5px;
+            -webkit-appearance: none;
+            background: #666;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .volume-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #aed581;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .volume-control input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .volume-control .volume-value {
+            min-width: 40px;
+            text-align: right;
+            opacity: 0.8;
+        }
+
+        .music-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #666;
+        }
+
+        .music-controls button {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 1.2em;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .music-controls button:hover {
+            opacity: 1;
+        }
+
+        .music-controls button.active-shuffle {
+            background-color: #aed581;
+            color: #333;
+            border-radius: 50%;
+            transform: scale(1.1);
+            box-shadow: 0 0 5px rgba(174, 213, 129, 0.7);
+        }
+
+        .music-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .music-list .track {
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .music-list .track:hover {
+            background-color: #444;
+        }
+
+        .music-list .track.active {
+            background-color: #aed581;
+            color: #333;
+        }
+
+        /* 消息操作按钮样式 */
+        .message-actions {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            display: flex;
+            gap: 5px;
+            opacity: 0.9;
+            z-index: 10;
+        }
+
+        .message-actions:hover {
+            opacity: 1;
+        }
+
+        #chat li.caller .message-actions {
+            display: flex;
+           
+        }
+
+        .message-actions button {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            padding: 3px 6px;
+            font-size: 14px;
+            color: #333;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-actions button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        #emoji-btn {
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-right: 5px;
+            transition: transform 0.2s;
+        }
+
+        #emoji-btn:hover {
+            transform: scale(1.2);
+        }
+
+        #emoji-box {
+            position: absolute;
+            bottom: 50px;
+            left: 10px;
+            width: 320px;
+            max-height: 300px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 10px;
+            display: none;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        #emoji-search {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        #emoji-search:focus {
+            outline: none;
+            border-color: #aed581;
+            box-shadow: 0 0 0 2px rgba(174, 213, 129, 0.2);
+        }
+
+        #emoji-box.show {
+            display: block;
+            animation: fadeIn 0.2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #emoji-categories {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            overflow-x: auto;
+            padding-bottom: 5px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .emoji-category {
+            cursor: pointer;
+            padding: 5px 8px;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            font-size: 0.9em;
+            white-space: nowrap;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .emoji-category:hover,
+        .emoji-category.active {
+            background-color: #aed581;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        #emoji-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 5px;
+        }
+
+        .emoji-item {
+            cursor: pointer;
+            font-size: 1.5em;
+            padding: 5px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+            min-width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .emoji-item:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.1);
+        }
+
+        
+        .edit-mode textarea {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #aed581;
+            border-radius: 8px;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .edit-mode .edit-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 5px;
+            justify-content: flex-end;
+        }
+
+        .edit-mode button {
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .edit-mode .save-btn {
+            background-color: #aed581;
+            color: white;
+        }
+
+        .edit-mode .cancel-btn {
+            background-color: #ff9e80;
+            color: white;
+        }
+
+        
+        #bg-btn {
+            margin-left: 10px;
+            padding: 3px 8px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background: none;
+            border: 2px solid #aed581;
+            border-radius: 50%;
+            color: #333;
+            opacity: 0.9;
+            transition: all 0.3s;
+        }
+
+        #bg-btn:hover {
+            opacity: 1;
+            background: #aed581;
+            color: white;
+        }
+
+        #bg-pop {
+            min-width: 320px;
+            max-width: 400px;
+            padding: 15px;
+            background: #333;
+            border: 1px solid #666;
+            border-radius: 8px;
+            color: #fff;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .bg-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #666;
+        }
+
+        .bg-controls button {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 0.9em;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .bg-controls button:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        .bg-opacity-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 10px 0 15px 0;
+            padding: 5px 10px;
+            border-bottom: 1px solid #666;
+        }
+
+        .bg-opacity-control label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            min-width: 50px;
+        }
+
+        .bg-opacity-control input[type="range"] {
+            flex: 1;
+            height: 5px;
+            -webkit-appearance: none;
+            background: #666;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .bg-opacity-control input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #aed581;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .bg-opacity-control input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .bg-opacity-control .bg-opacity-value {
+            min-width: 40px;
+            text-align: right;
+            opacity: 0.8;
+        }
+
+        .bg-size-info {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #aaa;
+            font-style: italic;
+        }
+
+        .bg-category {
+            font-size: 0.9em;
+            margin: 10px 0 5px 0;
+            color: #aed581;
+            font-weight: bold;
+        }
+
+        .bg-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .bg-item {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 6px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .bg-item.active {
+            border-color: #aed581;
+            box-shadow: 0 0 0 2px rgba(174, 213, 129, 0.5);
+        }
+
+        .color-bg {
+            position: relative;
+        }
+
+        .color-bg::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+            pointer-events: none;
+        }
+
+        
+        body {
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.3;
+            z-index: -1;
+            transition: opacity 0.5s;
+        }
+
+        
+        #custom-bg-container {
+            display: none;
+        }
+
+        #custom-bg-container.show {
+            display: block;
+        }
+
+        .bg-item .delete-bg {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .bg-item:hover .delete-bg {
+            opacity: 1;
+        }
+
+       
+        .message .name {
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.25);
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .message.caller .name {
+            background-color: rgba(174, 213, 129, 0.5);
+            color: #fff;
+            text-align: left;
+            border-bottom-color: rgba(174, 213, 129, 0.3);
+        }
+
+        .message.others .name {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            text-align: left;
+            border-bottom-color: rgba(255, 255, 255, 0.2);
+        }
+
+       
+        .message.status .name {
+            background-color: rgba(255, 193, 7, 0.4);
+            color: #fff;
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
+            border-bottom-color: rgba(255, 193, 7, 0.3);
+        }
+
+        
+        .message .name:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        
+        #chat .message {
+            display: inline-block;
+            max-width: 80%;
+            padding: 8px 12px;
+            border-radius: 12px;
+            word-break: break-word;
+            white-space: pre-wrap;
+            line-height: 1.4;
+            position: relative;
+        }
+
+       
+        .message-content {
+            width: 100%;
+            overflow-wrap: break-word;
+        }
+
+        #chat .message.caller {
+            background-color: #aed581;
+            text-align: left;
+            border-top-right-radius: 4px;
+            position: relative;
+            padding-right: 60px;
+        }
+
+        #chat .message.others {
+            background-color: #80deea;
+            text-align: left;
+            border-top-left-radius: 4px;
+        }
+
+        
+        #mic-btn {
+            transition: all 0.3s ease;
+        }
+        
+        #mic-btn.listening {
+            background-color: #ff4081;
+            color: white;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 64, 129, 0.7);
+            }
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 10px rgba(255, 64, 129, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 64, 129, 0);
+            }
+        }
+
+        
+        #spam-protection-notice {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(244, 67, 54, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+            text-align: center;
+            font-weight: bold;
+            animation: fadeInUp 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate(-50%, 20px);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        
+        #user-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #aed581;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-right: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 10;
+        }
+
+        #user-avatar:hover {
+            transform: scale(1.08);
+            border-color: #9ccc65;
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        #avatar-pop {
+            display: none;
+        }
+
+        
+        header {
+            display: flex;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin-right: auto;
+        }
+
+        
+        #user-list-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #80deea;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        #user-list-btn:hover {
+            transform: scale(1.08);
+            background-color: #4dd0e1;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        #user-list-btn .count-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: #ff4081;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        #user-list-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 800px;
+            max-height: 80vh;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            overflow: hidden;
+            animation: fadeIn 0.3s ease;
+        }
+
+        #user-list-popup-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #user-list-popup-header h2 {
+            margin: 0;
+            color: #333;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #user-list-popup-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #666;
+            transition: all 0.2s;
+        }
+
+        #user-list-popup-close:hover {
+            color: #ff4081;
+            transform: scale(1.1);
+        }
+
+        #user-list-popup-content {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(80vh - 60px);
+        }
+
+        .user-counter {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        .user-counter span {
+            font-weight: bold;
+            color: #aed581;
+            font-size: 20px;
+        }
+
+        .user-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .user-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .user-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .user-card.current-user {
+            border: 2px solid #aed581;
+            background-color: rgba(174, 213, 129, 0.1);
+        }
+
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #aed581;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .user-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            animation: fadeIn 0.3s ease;
+        }
+
+        #user-list-loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #aed581;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 600px) {
+            #user-list-popup {
+                width: 95%;
+            }
+            
+            .user-list-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 画板样式 */
+        #drawing-board-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            flex-direction: column;
+            align-items: center;
+            max-width: 95vw;
+            max-height: 95vh;
+            overflow: auto;
+        }
+
+        #drawing-canvas {
+            background-color: white;
+            border-radius: 5px;
+            cursor: crosshair;
+            margin-bottom: 10px;
+            border: 1px solid #999;
+            user-select: none;
+            touch-action: none;
+        }
+
+        #drawing-panel {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #brush-size {
+            flex: 1;
+        }
+
+        #brush-color {
+            width: 60px;
+            height: auto;
+        }
+
+        .drawing-controls {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .drawing-controls button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .drawing-controls button.cancel {
+            background-color: #f44336;
+        }
+
+        #shortcut-info {
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #aaa;
+            text-align: center;
+            width: 100%;
+        }
+
+        #drawing-box {
+            border: 1px solid #999;
+            width: 35px;
+            height: 35px;
+            display: grid;
+            place-items: center;
+            margin-right: 5px;
+        }
+
+        #drawing-pen {
+            background: #000;
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+        }
+
+        #drawing-eraser, #drawing-pen-mode {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #999;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        #drawing-eraser.active, #drawing-pen-mode.active {
+            background-color: #e0e0e0;
+            outline: 2px solid #3399ff;
+        }
+
+        .eraser-cursor {
+            cursor: crosshair !important;
+        }
+
+        #drawing-box.eraser-mode #drawing-pen {
+            background: #ffffff !important;
+            border: 1px dashed #999;
+        }
+
+        #drawing-line-style {
+            height: 35px;
+            border: 1px solid #999;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        #drawing-line-style:focus {
+            outline: 2px solid #3399ff;
+        }
+
+        .tool-tip {
+            position: relative;
+        }
+
+        .tool-tip:hover::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chat Universe</h1>
+        <!-- TODO: Popover -->
+        <button id="btn" popovertarget="pop">👧🏻 = <b id="count">0</b></button>
+        <div id="pop" popover>TODO</div>
+        <button id="user-list-btn" title="查看在线用户列表">
+            👥
+            <span class="count-badge" id="user-count-badge">0</span>
+        </button>
+        <img id="user-avatar" src="image/default-avatar.png" alt="Your Avatar" title="Click To See Big Image" >
+        <button id="bgm-btn" title="Background Music" popovertarget="music-pop">🎵</button>
+        <button id="bg-btn" title="背景图片" popovertarget="bg-pop">🖼️</button>
+        <div id="music-pop" popover>
+            <div class="music-controls">
+                <button id="prev-track">⏮️</button>
+                <button id="play-pause">⏯️</button>
+                <button id="next-track">⏭️</button>
+                <button id="shuffle">🔀</button>
+            </div>
+            <div class="volume-control">
+                <label>🔊</label>
+                <input type="range" id="volume-slider" min="0" max="100" value="50">
+                <span class="volume-value">50%</span>
+            </div>
+            <div class="music-list">
+                <div class="track" data-src="audio/bgm1.mp3">Living in your eyes</div>
+                <div class="track" data-src="audio/bgm2.mp3">How deep is your love</div>
+                <div class="track" data-src="audio/bgm3.mp3">Closer</div>
+                <div class="track" data-src="audio/bgm4.mp3">Pure Love</div>
+                <div class="track" data-src="audio/bgm5.mp3">Saving All My Love To You</div>
+                <div class="track" data-src="audio/bgm6.mp3">残酷な天使のテーゼ</div>
+                <div class="track" data-src="audio/bgm7.mp3">Lemon</div>
+                <div class="track" data-src="audio/bgm8.mp3">Plastic Love</div>
+                <div class="track" data-src="audio/bgm9.mp3">Stay With Me</div>
+                <div class="track" data-src="audio/bgm10.mp3">Close To You</div>
+                <div class="track" data-src="audio/bgm11.mp3">Elegy Of The Dynast</div>
+                <div class="track" data-src="audio/bgm12.mp3">Kingdom of Predators</div>
+
+            </div>
+        </div>
+        
+        <div id="bg-pop" popover>
+            <div class="bg-controls">
+                <button id="reset-bg" title="恢复默认背景">🔄 Restore To Default Setting</button>
+                <button id="upload-bg" title="上传自定义背景">📤 Upload Image</button>
+                <input type="file" id="bg-upload" accept="image/*" hidden>
+            </div>
+            <div class="bg-opacity-control">
+                <label>Transparency</label>
+                <input type="range" id="bg-opacity-slider" min="10" max="100" value="30">
+                <span class="bg-opacity-value">30%</span>
+            </div>
+            <div class="bg-size-info">
+                <small>Uploaded image size limit: 2MB( >2mb automaticaly compressed )</small>
+            </div>
+            <div class="bg-list">
+                <div class="bg-category">HD picture wallpaper</div>
+                <div class="bg-grid">
+                    <div class="bg-item" data-src="img/bg1.jpg" style="background-image: url('img/bg1.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg2.jpg" style="background-image: url('img/bg2.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg3.jpg" style="background-image: url('img/bg3.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg4.jpg" style="background-image: url('img/bg4.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg5.jpg" style="background-image: url('img/bg5.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg6.jpg" style="background-image: url('img/bg6.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg7.jpg" style="background-image: url('img/bg7.jpg')"></div>
+                    <div class="bg-item" data-src="img/bg8.jpg" style="background-image: url('img/bg8.jpg')"></div>
+                </div>
+                <div class="bg-category">Pure color background</div>
+                <div class="bg-grid">
+                    <div class="bg-item color-bg" data-color="#f5f5f5" style="background-color: #f5f5f5"></div>
+                    <div class="bg-item color-bg" data-color="#e8f5e9" style="background-color: #e8f5e9"></div>
+                    <div class="bg-item color-bg" data-color="#e3f2fd" style="background-color: #e3f2fd"></div>
+                    <div class="bg-item color-bg" data-color="#fff8e1" style="background-color: #fff8e1"></div>
+                    <div class="bg-item color-bg" data-color="#fce4ec" style="background-color: #fce4ec"></div>
+                    <div class="bg-item color-bg" data-color="#f3e5f5" style="background-color: #f3e5f5"></div>
+                    <div class="bg-item color-bg" data-color="#e0f7fa" style="background-color: #e0f7fa"></div>
+                    <div class="bg-item color-bg" data-color="#fffde7" style="background-color: #fffde7"></div>
+                </div>
+                <div id="custom-bg-container">
+                    <div class="bg-category">Custom background</div>
+                    <div class="bg-grid" id="custom-bg-grid"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 背景音乐初始 要去找 playtrack() -->
+        <audio id="bgm" loop>
+            <source type="audio/mpeg">
+        </audio>
+        
+        <audio id="sound-message-sent" preload="auto">
+            <source src="audio/message-sent.wav" type="audio/wav">
+        </audio>
+        <audio id="sound-message-received" preload="auto">
+            <source src="audio/message-received.wav" type="audio/wav">
+        </audio>
+        <audio id="sound-user-join" preload="auto">
+            <source src="audio/user-join.wav" type="audio/wav">
+        </audio>
+        <audio id="sound-user-leave" preload="auto">
+            <source src="audio/user-leave.wav" type="audio/wav">
+        </audio>
+    </header>
+
+    <main>
+        <div style="flex: 1"></div>
+        <ul id="chat"></ul>
+    </main>
+
+    <footer>
+        <form autocomplete="off">
+            <div style="position: relative;">
+                <textarea id="message" placeholder="Enter Message" autofocus rows="1"></textarea>
+                <div id="emoji-box">
+                    <input type="text" id="emoji-search" placeholder="Search Emoji...">
+                    <div id="emoji-categories">
+                        <div class="emoji-category active" data-category="all">All</div>
+                        <div class="emoji-category" data-category="face">Face</div>
+                        <div class="emoji-category" data-category="gesture">Gesture</div>
+                        <div class="emoji-category" data-category="food">Food</div>
+                        <div class="emoji-category" data-category="animal">Animal</div>
+                        <div class="emoji-category" data-category="object">Object</div>
+                        <div class="emoji-category" data-category="travel">Travel</div>
+                        <div class="emoji-category" data-category="activity">Activities</div>
+                    </div>
+                    <div id="emoji-container"></div>
+                </div>
+                <div id="format-tips">
+                    Format: <strong>  **bold**  </strong> <em>  *italic*  </em> <u>  ~underline~  </u>
+                </div>
+            </div>
+            <button type="button" id="emoji-btn" title="选择表情">😊</button>
+            <button type="button" id="mic-btn" title="Voice Input">🎤</button>
+            <button type="button" id="image">Image</button>
+            <button type="button" id="gallery">Gallery</button>
+            <button type="button" id="drawing-btn">Drawing</button>
+            <button type="button" id="file">File</button>
+            <button type="button" id="video" title="上传视频">🎬</button>
+            <button type="button" id="leave">Leave</button>
+            <input type="file" id="file1" accept="image/*" hidden multiple>
+            <input type="file" id="file2" hidden multiple>
+            <input type="file" id="file3" accept="video/*" hidden multiple>
+        </form>
+    </footer>
+
+    <!-- 垃圾信息防护通知 -->
+    <div id="spam-protection-notice"></div>
+
+    <dialog id="dialog">
+        <form method="dialog"><button>X</button></form>
+        <div id="container"></div>
+    </dialog>
+
+    
+    <div id="user-overlay" class="user-overlay"></div>
+    <div id="user-list-popup">
+        <div id="user-list-popup-header">
+            <h2>
+                <span>👥</span> ChatRoom User List
+            </h2>
+            <button id="user-list-popup-close">&times;</button>
+        </div>
+        <div id="user-list-popup-content">
+            <div class="user-counter">
+                Current online users：<span id="popup-user-count">0</span> person
+            </div>
+            <div id="user-list-loading">
+                <div class="spinner"></div>
+            </div>
+            <div id="user-list-grid" class="user-list-grid" style="display: none;"></div>
+        </div>
+    </div>
+
+    
+    <div id="drawing-board-container">
+        <div id="drawing-panel">
+            <div id="drawing-box">
+                <div id="drawing-pen"></div>
+            </div>
+
+            <input type="range" id="brush-size" min="1" max="30" step="1" value="5" list="size-ticks">
+            <datalist id="size-ticks">
+                <option value="5">
+                <option value="10">
+                <option value="15">
+                <option value="20">
+                <option value="25">
+                <option value="30">
+            </datalist>
+
+            <input type="color" id="brush-color" list="color-presets">
+            <datalist id="color-presets">
+                <option value="#ff0000">
+                <option value="#ffa500">
+                <option value="#ffff00">
+                <option value="#008000">
+                <option value="#0000ff">
+                <option value="#4b0082">
+                <option value="#ee82ee">
+                <option value="#000000">
+                <option value="#ffffff">
+                <option value="#808080">
+            </datalist>
+
+            <select id="drawing-line-style" class="tool-tip" data-tip="线条样式">
+                <option value="solid">Straight Line</option>
+                <option value="dashed">Dashed Line</option>
+                <option value="dotted">Dotted Line</option>
+            </select>
+
+            <button id="drawing-eraser" class="tool-tip" >🧽</button>
+            <button id="drawing-pen-mode" class="active tool-tip" >✏️</button>
+
+            <button id="drawing-image" class="tool-tip" data-tip="Insert Image">🖼️</button>
+            <input type="file" id="drawing-file" accept="image/*" hidden>
+
+            <button id="drawing-download" class="tool-tip" data-tip="Download Image">💾</button>
+            <button id="clear-canvas" class="tool-tip" >🗑️</button>
+        </div>
+
+        <div id="shortcut-info">
+            Shortcut Key: e = Eraser, p = Pen, 0 = Clear Canvas, 1-9 = Colour , Scroll wheel = adjust brush/eraser size 
+        </div>
+
+        <canvas id="drawing-canvas" width="800" height="600"></canvas>
+
+        <div class="drawing-controls">
+            <button id="send-drawing" type="button">Sent</button>
+            <button id="close-drawing" class="cancel" type="button">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+       
+        const name = sessionStorage.getItem('name');
+        if (!name) {
+            location = '/';
+            throw 'ERROR: Invalid name';
+        }
+
+        
+        $('#leave').click(e => {
+            sessionStorage.clear();
+            location = '/';
+        });
+
+        
+        function getImageURL(message) {
+            const re = /\.(jpg|jpeg|png|webp|bmp|gif)$/i;
+            try {
+                const url = new URL(message);
+                if (re.test(url.pathname)) {
+                    return url.href;
+                }
+            }
+            catch {
+                
+            }
+            return null;
+        }
+
+        function getYouTubeId(message) {
+            try {
+                const url = new URL(message);
+                
+                if (url.hostname === 'www.youtube.com' && url.pathname === '/watch') {
+                    return url.searchParams.get('v');
+                }
+                
+                else if (url.hostname === 'youtu.be') {
+                    return url.pathname.substring(1); 
+                }
+                
+                else if (url.hostname === 'www.youtube.com' && url.pathname.startsWith('/embed/')) {
+                    return url.pathname.split('/')[2];
+                }
+                
+                else if (url.hostname === 'www.youtube.com' && url.pathname.startsWith('/shorts/')) {
+                    return url.pathname.split('/')[2];
+                }
+            }
+            catch {
+                
+            }
+            return null;
+        }
+
+        function sendImages(files) {
+            for (const f of files) {
+                if (f && f.type.startsWith('image/')) {
+                    
+                    fit(f, 500, 500, 'dataURL', 'image/webp')
+                        .then(url => con.invoke('SendImage', name, url));
+                }
+            }
+        }
+
+        function sendFiles(files) {
+            for (const f of files) {
+                if (f) {
+                    const fr = new FileReader();
+                    fr.onload = e => {
+                        const url = e.target.result;
+                        con.invoke('SendFile', name, url, f.name);
+                    };
+                    fr.readAsDataURL(f);
+                }
+            }
+        }
+
+       
+        function sendVideos(files) {
+            for (const f of files) {
+                if (f && f.type.startsWith('video/')) {
+                    const fr = new FileReader();
+                    fr.onload = e => {
+                        const url = e.target.result;
+                        con.invoke('SendVideo', name, url, f.name);
+                    };
+                    fr.readAsDataURL(f);
+                }
+            }
+        }
+
+        
+        const param = $.param({ name });
+
+        const con = new signalR.HubConnectionBuilder()
+            .withUrl('/hub?' + param)
+            .build();
+
+        con.onclose(err => {
+            sessionStorage.clear();
+            location = '/';
+        });
+
+        
+        function playSound(soundId) {
+            const sound = $(`#${soundId}`)[0];
+            if (sound) {
+                sound.currentTime = 0;
+              
+                const volume = $('#volume-slider').val() / 100;
+                sound.volume = volume;
+                sound.play().catch(err => console.log('音效播放失败:', err));
+            }
+        }
+
+        
+        function handleMessageReceived(who) {
+            if (who === 'others') {
+                playSound('sound-message-received');
+            } else if (who === 'caller') {
+                playSound('sound-message-sent');
+            }
+        }
+
+        con.on('ReceiveText', (name, message, who, messageId) => {
+          
+            if (message.startsWith('__avatar_data__')) {
+               
+                const avatarData = message.substring('__avatar_data__'.length);
+                
+                
+                try {
+                    const savedAvatars = JSON.parse(localStorage.getItem('chat-user-avatars') || '{}');
+                    savedAvatars[name] = avatarData;
+                    localStorage.setItem('chat-user-avatars', JSON.stringify(savedAvatars));
+                    console.log(`已收到并保存 ${name} 的头像数据`);
+                    
+                  
+                    if ($('#user-list-popup').is(':visible')) {
+                        updateUserListUI(window.currentUsers || []);
+                    }
+                } catch (e) {
+                    console.error('保存用户头像数据失败:', e);
+                }
+                
+                return; 
+            }
+            
+            
+            message = filterRudeWords(message);
+            
+            
+            let formattedMessage = formatText(message);
+            
+            
+            formattedMessage = formattedMessage
+                .replaceAll(':)', '😊')
+                .replaceAll(':(', '😒')
+                .replaceAll('<3', '❤️')
+                .replaceAll(':D', '😁')
+                .replaceAll(';)', '😉')
+                .replaceAll(':P', '😋')
+                .replaceAll(':*', '😘')
+                .replaceAll(':O', '😮')
+                .replaceAll(':|', '😐')
+                .replaceAll(':9', '😕')
+                .replaceAll(':\'(', '😢')
+                .replaceAll('B)', '😎')
+                .replaceAll('XD', '😆')
+                .replaceAll(':angry:', '😡')
+                .replaceAll(':love:', '😍')
+                .replaceAll(':hug:', '🤗')
+                .replaceAll(':think:', '🤔')
+                .replaceAll(':clap:', '👏')
+                .replaceAll(':fire:', '🔥')
+                .replaceAll(':star:', '⭐')
+                .replaceAll(':heart:', '❤️')
+                .replaceAll(':+1:', '👍')
+                .replaceAll(':-1:', '👎')
+                .replaceAll(':wave:', '👋')
+                .replaceAll(':pray:', '🙏')
+                .replaceAll(':party:', '🎉')
+                .replaceAll(':cool:', '😎')
+                .replaceAll(':sleep:', '😴')
+                .replaceAll(':cry:', '😭')
+                .replaceAll(':rofl:', '🤣')
+                .replaceAll(':please:', '🥺')
+                .replaceAll(':wow:', '🤩');
+
+            
+            formattedMessage = formattedMessage.replace(
+                /(https?:\/\/\S+)/gi,
+                '<a href="$&" target="_blank">$&</a>'
+            )
+            .replace(
+                /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+                '<a href="mailto:$&">$&</a>'
+            )
+            .replace(
+                /(\+?[\d\s\-]{8,})/g,
+                function(match) {
+                    
+                    const phoneNumber = match.replace(/\D/g, '');
+                    return `<a href="https://wa.me/${phoneNumber}" target="_blank" title="在WhatsApp中打开">${match}</a>`;
+                }
+            );
+
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">${formattedMessage}</div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="editMessage(this)">✏️</button>
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+
+            $('#chat').append(messageHtml);
+            handleMessageReceived(who);
+            
+           
+            addMessageToHistory({
+                type: 'text',
+                name: name,
+                message: formattedMessage,
+                who: who,
+                messageId: messageId,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        con.on('ReceiveImage', (name, url, who, messageId) => {
+            $('#chat').append(`
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent an image<br>
+                            <img src="${url}" class="image">
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `);
+
+            handleMessageReceived(who);
+            
+            
+            addMessageToHistory({
+                type: 'image',
+                name: name,
+                url: url,
+                who: who,
+                messageId: messageId,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        con.on('ReceiveYouTube', (name, id, who, messageId) => {
+            $('#chat').append(`
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a video<br>
+                            <iframe width="400" height="300" 
+                                    src="https://www.youtube.com/embed/${id}"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `);
+
+            handleMessageReceived(who);
+            
+           
+            addMessageToHistory({
+                type: 'youtube',
+                name: name,
+                id: id,
+                who: who,
+                messageId: messageId,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        con.on('ReceiveFile', (name, url, filename, who, messageId) => {
+            $('#chat').append(`
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a file<br>
+                            <a href="${url}" download="${filename}" class="file">
+                                <i class="fa fa-file"></i> ${filename}
+                            </a>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `);
+
+            handleMessageReceived(who);
+            
+           
+            addMessageToHistory({
+                type: 'file',
+                name: name,
+                url: url,
+                filename: filename,
+                who: who,
+                messageId: messageId,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        
+        con.on('ReceiveVideo', (name, url, filename, who, messageId) => {
+            $('#chat').append(`
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a video<br>
+                            <video controls width="400" class="video-player">
+                                <source src="${url}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `);
+
+            handleMessageReceived(who);
+            
+            
+            addMessageToHistory({
+                type: 'video',
+                name: name,
+                url: url,
+                filename: filename,
+                who: who,
+                messageId: messageId,
+                timestamp: new Date().toISOString()
+            });
+        });
+
+        con.on('UpdateStatus', (count, status, names) => {
+            $('#count').text(count);
+            $('#user-count-badge').text(count); 
+            
+            
+            window.currentUsers = names;
+            
+            
+                    if ($('#user-list-popup').is(':visible')) {
+                updateUserListUI(names);
+            }
+            
+            
+            let formattedStatus = status;
+            let userName = '';
+            let action = '';
+            
+            
+            if (status.includes('joined the chat') || status.includes('left the chat')) {
+                const parts = status.split(' ');
+                userName = parts[0];
+                action = parts.slice(1).join(' ');
+                formattedStatus = action;
+            }
+
+            
+            const statusHtml = `
+                <li class="status">
+                    <div class="message status">
+                        ${userName ? `<div class="name">${userName}</div>` : ''}
+                        ${formattedStatus}
+                    </div>
+                </li>
+            `;
+
+            $('#chat').append(statusHtml);
+
+           
+            $('#pop').html(names.toSorted().join('<br>'));
+
+           
+            if (status.includes('joined the chat')) {
+                playSound('sound-user-join');
+            } else if (status.includes('left the chat')) {
+                playSound('sound-user-leave');
+            }
+            
+            
+            addMessageToHistory({
+                type: 'status',
+                status: formattedStatus,
+                userName: userName,
+                timestamp: new Date().toISOString(),
+                messageId: 'status_' + new Date().getTime() 
+            });
+        });
+
+       
+        con.on('SpamProtection', (remainingSeconds) => {
+            showSpamProtectionNotice(remainingSeconds);
+        });
+
+        
+        function showSpamProtectionNotice(remainingSeconds) {
+           
+            if (window.spamProtectionTimers) {
+                window.spamProtectionTimers.forEach(timerId => clearTimeout(timerId));
+            }
+            window.spamProtectionTimers = [];
+            
+            const notice = $('#spam-protection-notice');
+            notice.text(`Messages were sent too frequently. Please wait ${remainingSeconds} seconds before sending again `);
+            notice.css('display', 'block');
+            
+          
+            for (let i = remainingSeconds - 1; i >= 0; i--) {
+                const timerId = setTimeout(() => {
+                    if (i > 0) {
+                        notice.text(`Messages were sent too frequently. Please wait ${i} seconds before sending again `);
+                    } else {
+                        // 最后一秒，直接隐藏通知
+                        notice.css('display', 'none');
+                        console.log("倒计时结束，通知已隐藏");
+                    }
+                }, (remainingSeconds - i) * 1000);
+                
+                window.spamProtectionTimers.push(timerId);
+            }
+        }
+
+        // 接收消息删除
+        con.on('MessageDeleted', (messageId) => {
+            console.log('收到消息删除:', messageId);
+            try {
+                const messageElement = $(`li[data-message-id="${messageId}"]`);
+                if (messageElement.length) {
+                   
+                    messageElement.css('opacity', '0.5');
+                    setTimeout(() => {
+                        messageElement.remove();
+                    }, 300);
+                } else {
+                    console.warn('未找到要删除的消息元素:', messageId);
+                }
+                
+                // 从历史记录中删除消息
+                removeMessageFromHistory(messageId);
+            } catch (err) {
+                console.error('处理消息删除时发生错误:', err);
+            }
+        });
+
+        // 接收消息更新
+        con.on('MessageUpdated', (messageId, newText) => {
+            console.log('收到消息更新:', messageId);
+            const messageElement = $(`li[data-message-id="${messageId}"]`);
+            if (messageElement.length) {
+                const messageDiv = messageElement.find('.message');
+                const isCaller = messageElement.hasClass('caller');
+                const userName = messageDiv.find('.name').text(); 
+                console.log('更新消息的用户名:', userName); 
+
+               
+                newText = filterRudeWords(newText);
+                
+                
+                let formattedText = formatText(newText);
+
+               
+                formattedText = formattedText
+                    .replaceAll(':)', '😊')
+                    .replaceAll(':(', '😒')
+                    .replaceAll('<3', '❤️')
+                    .replaceAll(':D', '😁')
+                    .replaceAll(';)', '😉')
+                    .replaceAll(':P', '😋')
+                    .replaceAll(':*', '😘')
+                    .replaceAll(':O', '😮')
+                    .replaceAll(':|', '😐')
+                    .replaceAll(':9', '😕')
+                    .replaceAll(':\'(', '😢')
+                    .replaceAll('B)', '😎')
+                    .replaceAll('XD', '😆')
+                    .replaceAll(':angry:', '😡')
+                    .replaceAll(':love:', '😍')
+                    .replaceAll(':hug:', '🤗')
+                    .replaceAll(':think:', '🤔')
+                    .replaceAll(':clap:', '👏')
+                    .replaceAll(':fire:', '🔥')
+                    .replaceAll(':star:', '⭐')
+                    .replaceAll(':heart:', '❤️')
+                    .replaceAll(':+1:', '👍')
+                    .replaceAll(':-1:', '👎')
+                    .replaceAll(':wave:', '👋')
+                    .replaceAll(':pray:', '🙏')
+                    .replaceAll(':party:', '🎉')
+                    .replaceAll(':cool:', '😎')
+                    .replaceAll(':sleep:', '😴')
+                    .replaceAll(':cry:', '😭')
+                    .replaceAll(':rofl:', '🤣')
+                    .replaceAll(':please:', '🥺')
+                    .replaceAll(':wow:', '🤩');
+
+                formattedText = formattedText.replace(
+                    /(https?:\/\/\S+)/gi,
+                    '<a href="$&" target="_blank">$&</a>'
+                )
+                .replace(
+                    /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+                    '<a href="mailto:$&">$&</a>'
+                )
+                .replace(
+                    /(\+?[\d\s\-]{8,})/g,
+                    function(match) {
+                        
+                        const phoneNumber = match.replace(/\D/g, '');
+                        return `<a href="https://wa.me/${phoneNumber}" target="_blank" title="在WhatsApp中打开">${match}</a>`;
+                    }
+                );
+
+               
+                messageDiv.html(`
+                    <div class="name">${userName}</div>
+                    <div class="message-content">${formattedText}</div>
+                    ${isCaller ? `
+                        <div class="message-actions">
+                            <button onclick="editMessage(this)">✏️</button>
+                            <button onclick="deleteMessage(this)">🗑️</button>
+                        </div>
+                    ` : ''}
+                `);
+                
+                // 更新历史记录中的消息
+                updateMessageInHistory(messageId, formattedText);
+            }
+        });
+
+        // Start ================================
+        con.start().then(() => {
+            
+            main();
+        });
+
+        
+        let rudeWords = [];
+
+        // 消息历史记录功能
+        const MESSAGE_HISTORY_KEY = 'chat-message-history';
+        const MAX_HISTORY_MESSAGES = 50;
+        let messageHistory = [];
+
+        // 从localStorage加载消息历史
+        function loadMessageHistory() {
+            try {
+                const savedHistory = localStorage.getItem(MESSAGE_HISTORY_KEY);
+                if (savedHistory) {
+                    messageHistory = JSON.parse(savedHistory);
+                    console.log(`已加载 ${messageHistory.length} 条历史消息`);
+                }
+            } catch (error) {
+                console.error('加载消息历史失败:', error);
+                messageHistory = [];
+            }
+        }
+
+        // 保存消息历史到localStorage
+        function saveMessageHistory() {
+            try {
+                localStorage.setItem(MESSAGE_HISTORY_KEY, JSON.stringify(messageHistory));
+            } catch (error) {
+                console.error('保存消息历史失败:', error);
+                
+                if (messageHistory.length > 20) {
+                    messageHistory = messageHistory.slice(-20); // 只保留最新的20条
+                    try {
+                        localStorage.setItem(MESSAGE_HISTORY_KEY, JSON.stringify(messageHistory));
+                } catch (e) {
+                        console.error('即使减少消息数量后仍然无法保存:', e);
+                    }
+                }
+            }
+        }
+
+        // 添加消息到历史记录
+        function addMessageToHistory(messageData) {
+           
+            const existingIndex = messageHistory.findIndex(m => m.messageId === messageData.messageId);
+            
+            if (existingIndex !== -1) {
+               
+                messageHistory[existingIndex] = messageData;
+            } else {
+                
+                messageHistory.push(messageData);
+                
+                
+                if (messageHistory.length > MAX_HISTORY_MESSAGES) {
+                    messageHistory.shift();
+                }
+            }
+            
+            
+            saveMessageHistory();
+        }
+
+        
+        function removeMessageFromHistory(messageId) {
+            const initialLength = messageHistory.length;
+            messageHistory = messageHistory.filter(m => m.messageId !== messageId);
+            
+            if (messageHistory.length !== initialLength) {
+                
+                saveMessageHistory();
+            }
+        }
+
+        
+        function updateMessageInHistory(messageId, newText) {
+            const message = messageHistory.find(m => m.messageId === messageId);
+            if (message) {
+                message.message = newText;
+                saveMessageHistory();
+            }
+        }
+
+       
+        function displayMessageHistory() {
+            if (messageHistory.length === 0) return;
+            
+            console.log(`正在显示 ${messageHistory.length} 条历史消息`);
+            
+           
+            $('#chat').empty();
+            
+           
+            messageHistory.forEach(msg => {
+                switch (msg.type) {
+                    case 'text':
+                        displayTextMessage(msg.name, msg.message, msg.who, msg.messageId);
+                        break;
+                    case 'image':
+                        displayImageMessage(msg.name, msg.url, msg.who, msg.messageId);
+                        break;
+                    case 'youtube':
+                        displayYouTubeMessage(msg.name, msg.id, msg.who, msg.messageId);
+                        break;
+                    case 'file':
+                        displayFileMessage(msg.name, msg.url, msg.filename, msg.who, msg.messageId);
+                        break;
+                    case 'video':
+                        displayVideoMessage(msg.name, msg.url, msg.filename, msg.who, msg.messageId);
+                        break;
+                    case 'status':
+                        displayStatusMessage(msg.status, msg.userName);
+                        break;
+                }
+            });
+            
+           
+            scrollToBottom();
+        }
+
+       
+        function displayTextMessage(name, message, who, messageId) {
+            
+            const formattedMessage = message;
+            
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">${formattedMessage}</div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="editMessage(this)">✏️</button>
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(messageHtml);
+        }
+
+        
+        function displayImageMessage(name, url, who, messageId) {
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent an image<br>
+                            <img src="${url}" class="image">
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(messageHtml);
+        }
+
+        
+        function displayYouTubeMessage(name, id, who, messageId) {
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a video<br>
+                            <iframe width="400" height="300" 
+                                    src="https://www.youtube.com/embed/${id}"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(messageHtml);
+        }
+
+        
+        function displayFileMessage(name, url, filename, who, messageId) {
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a file<br>
+                            <a href="${url}" download="${filename}" class="file">
+                                <i class="fa fa-file"></i> ${filename}
+                            </a>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(messageHtml);
+        }
+
+       
+        function displayVideoMessage(name, url, filename, who, messageId) {
+            const messageHtml = `
+                <li class="${who}" data-message-id="${messageId}">
+                    <div class="message ${who}">
+                        <div class="name">${name}</div>
+                        <div class="message-content">
+                            sent a video<br>
+                            <video controls width="400" class="video-player">
+                                <source src="${url}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        ${who === 'caller' ? `
+                            <div class="message-actions">
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        ` : ''}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(messageHtml);
+        }
+
+        
+        function displayStatusMessage(status, userName) {
+            const statusHtml = `
+                <li class="status">
+                    <div class="message status">
+                        ${userName ? `<div class="name">${userName}</div>` : ''}
+                        ${status}
+                    </div>
+                </li>
+            `;
+            
+            $('#chat').append(statusHtml);
+        }
+
+        
+        function scrollToBottom() {
+            const chatContainer = $('main');
+            chatContainer.scrollTop(chatContainer[0].scrollHeight);
+        }
+
+        
+        function loadRudeWords() {
+            fetch('rudewords.txt')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('无法加载粗话列表');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    
+                    rudeWords = data.split('\n')
+                        .map(word => word.trim())
+                        .filter(word => word !== '');
+                    
+                    console.log(`已加载 ${rudeWords.length} 个过滤词`);
+                })
+                .catch(error => {
+                    console.error('加载粗话列表失败:', error);
+                });
+        }
+
+        
+        function filterRudeWords(message) {
+            if (!rudeWords.length) return message;
+
+           
+            for (const word of rudeWords) {
+               
+                const regex = new RegExp(`\\b${word}\\b`, 'gi');
+                
+               
+                const chineseRegex = new RegExp(word, 'g');
+                
+                
+                if (regex.test(message) || chineseRegex.test(message)) {
+                    return "**🤬The message you sent contains illegal words🤬**";
+                }
+            }
+            
+            
+            return message;
+        }
+
+        function main() {
+            
+            loadMessageHistory();
+            
+            
+            displayMessageHistory();
+            
+           
+            loadUserAvatar();
+            
+           
+            loadRudeWords();
+
+           
+            $('#message').on('input', function () {
+                this.style.height = 'auto';
+                this.style.height = this.scrollHeight + 'px';
+            });
+
+            
+            $('#message').on('keydown', function (e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    $('footer form').submit();
+                }
+            });
+
+           
+            loadEmojis();
+
+            
+            $('#emoji-btn').click(function (e) {
+                e.stopPropagation();
+                $('#emoji-box').toggleClass('show');
+                if ($('#emoji-box').hasClass('show')) {
+                    $('#emoji-search').val('').focus();
+                }
+            });
+            
+           
+            setupSpeechRecognition();
+            
+           
+            setInterval(saveMessageHistory, 60000);
+
+           
+            $(document).click(function (e) {
+                if (!$(e.target).closest('#emoji-box').length && !$(e.target).is('#emoji-btn')) {
+                    $('#emoji-box').removeClass('show');
+                }
+            });
+
+           
+            $('#emoji-search').on('input', function () {
+                const searchTerm = $(this).val().toLowerCase();
+                filterEmojis(searchTerm, $('.emoji-category.active').data('category'));
+            });
+
+           
+            $('.emoji-category').click(function () {
+                $('.emoji-category').removeClass('active');
+                $(this).addClass('active');
+
+                const category = $(this).data('category');
+                const searchTerm = $('#emoji-search').val().toLowerCase();
+                filterEmojis(searchTerm, category);
+            });
+
+            
+            $('footer form').submit(e => {
+                e.preventDefault();
+                const message = $('#message').val().trim();
+                if (message) {
+                    const url = getImageURL(message);
+                    const id = getYouTubeId(message);
+
+                    if (url) {
+                        con.invoke('SendImage', name, url);
+                    }
+                    else if (id) {
+                        con.invoke('SendYouTube', name, id);
+                    }
+                    else {
+                        // 过滤消息中的粗话
+                        const filteredMessage = filterRudeWords(message);
+                        con.invoke('SendText', name, filteredMessage);
+                    }
+                }
+                $('#message')
+                    .val('')
+                    .css('height', '')
+                    .focus();
+            });
+
+           
+            $(document).on('click', '.image', e => {
+                document.fullscreenElement ?
+                    document.exitFullscreen() :
+                    e.target.requestFullscreen();
+            });
+
+            // 视频播放器全屏功能
+            $(document).on('dblclick', '.video-player', e => {
+                if (!document.fullscreenElement) {
+                    e.target.requestFullscreen();
+                }
+            });
+
+            // Image file picker
+            $('#image').click(e => $('#file1').click());
+
+            $('#file1').change(e => {
+                const files = e.target.files;
+                sendImages(files);
+                e.target.value = null;
+            });
+
+            // File file picker
+            $('#file').click(e => $('#file2').click());
+
+            $('#file2').change(e => {
+                const files = e.target.files;
+                sendFiles(files);
+                e.target.value = null;
+            });
+
+            // Video file picker
+            $('#video').click(e => $('#file3').click());
+
+            $('#file3').change(e => {
+                const files = e.target.files;
+                sendVideos(files);
+                e.target.value = null;
+            });
+
+            // Drag and drop
+            $('main').on('dragenter dragover', e => {
+                e.preventDefault();
+                $('main').addClass('active');
+            });
+
+            $('main').on('dragleave drop', e => {
+                e.preventDefault();
+                $('main').removeClass('active');
+            });
+
+            $('main').on('drop', e => {
+                e.preventDefault();
+                $('main').removeClass('active');
+
+                const dt = e.originalEvent.dataTransfer;
+                if (dt.files.length) {
+                    const imageFiles = [];
+                    const videoFiles = [];
+                    const otherFiles = [];
+
+                    for (const file of dt.files) {
+                        if (file.type.startsWith('image/')) {
+                            imageFiles.push(file);
+                        } else if (file.type.startsWith('video/')) {
+                            videoFiles.push(file);
+                        } else {
+                            otherFiles.push(file);
+                        }
+                    }
+
+                    if (imageFiles.length) sendImages(imageFiles);
+                    if (videoFiles.length) sendVideos(videoFiles);
+                    if (otherFiles.length) sendFiles(otherFiles);
+                }
+            });
+
+            // Dialog
+            $('#gallery').click(e => {
+                const images = $('.image').clone();
+                $('#container').html(images.length ? images : 'No image');
+                $('#dialog')[0].showModal();
+            });
+
+            $('#dialog').on('close', e => {
+                $('#container').empty();
+            });
+
+            // Background Music Control
+            const bgm = $('#bgm')[0];
+            const bgmBtn = $('#bgm-btn');
+            const tracks = $('.track').toArray();
+            let currentTrackIndex = 0;
+            let isShuffleMode = false;
+            let playHistory = []; 
+            let futureQueue = []; 
+
+           
+            const volumeSlider = $('#volume-slider');
+            const volumeValue = $('.volume-value');
+
+            
+            function applyVolumeToAll(volume) {
+                const effectVolume = volume / 100;
+                bgm.volume = effectVolume;
+                $('#sound-message-sent')[0].volume = effectVolume;
+                $('#sound-message-received')[0].volume = effectVolume;
+                $('#sound-user-join')[0].volume = effectVolume;
+                $('#sound-user-leave')[0].volume = effectVolume;
+            }
+
+            
+            const savedVolume = localStorage.getItem('bgm-volume');
+            if (savedVolume !== null) {
+                const volume = parseInt(savedVolume);
+                volumeSlider.val(volume);
+                volumeValue.text(volume + '%');
+                applyVolumeToAll(volume);
+            }
+
+           
+            volumeSlider.on('input', function () {
+                const volume = $(this).val();
+                volumeValue.text(volume + '%');
+                applyVolumeToAll(volume);
+                localStorage.setItem('bgm-volume', volume);
+            });
+
+           
+            function playTrack(index) {
+                currentTrackIndex = index;
+                const track = tracks[index];
+                const src = $(track).data('src');
+
+                
+                const timestamp = new Date().getTime();
+                $('#bgm source').attr('src', `${src}?t=${timestamp}`);
+                bgm.load();
+
+
+               
+                $('.track').removeClass('active');
+                $(track).addClass('active');
+
+               
+                bgm.play();
+                bgmBtn.addClass('playing');
+            }
+
+           
+            function getNextTrackIndex() {
+                if (isShuffleMode) {
+                  
+                    if (futureQueue.length > 0) {
+                        return futureQueue.pop();
+                    }
+
+                    
+                    let availableIndices = Array.from({length: tracks.length}, (_, i) => i)
+                        .filter(i => i !== currentTrackIndex);
+                    
+                   
+                    if (playHistory.length > 0) {
+                        availableIndices = availableIndices.filter(i => !playHistory.slice(-3).includes(i));
+                    }
+                    
+                    
+                    if (availableIndices.length === 0) {
+                        availableIndices = Array.from({length: tracks.length}, (_, i) => i)
+                            .filter(i => i !== currentTrackIndex);
+                    }
+                    
+                    
+                    const randomIndex = Math.floor(Math.random() * availableIndices.length);
+                    const nextIndex = availableIndices[randomIndex];
+                    
+                    
+                    playHistory.push(currentTrackIndex);
+                   
+                    if (playHistory.length > 5) {
+                        playHistory.shift();
+                    }
+                    
+                    console.log('随机模式 - 当前曲目:', currentTrackIndex, 
+                              '可用曲目:', availableIndices,
+                              '选择的下一曲目:', nextIndex,
+                              '播放历史:', playHistory);
+                    
+                    return nextIndex;
+                } else {
+                    
+                    const nextIndex = (currentTrackIndex + 1) % tracks.length;
+                    console.log('顺序模式 - 当前曲目:', currentTrackIndex, '下一曲目:', nextIndex);
+                    return nextIndex;
+                }
+            }
+
+            // 获取上一首歌的索引
+            function getPrevTrackIndex() {
+                if (isShuffleMode) {
+                    // 如果有播放历史，从历史记录中获取上一首
+                    if (playHistory.length > 0) {
+                        const prevIndex = playHistory.pop();
+                        // 将当前歌曲添加到前向队列
+                        futureQueue.push(currentTrackIndex);
+                        console.log('随机模式(后退) - 当前曲目:', currentTrackIndex, 
+                                  '上一曲目:', prevIndex,
+                                  '播放历史:', playHistory,
+                                  '前向队列:', futureQueue);
+                        return prevIndex;
+                    }
+                    
+                    // 如果没有历史记录，随机选择一首（避免当前歌曲）
+                    const availableIndices = Array.from({length: tracks.length}, (_, i) => i)
+                        .filter(i => i !== currentTrackIndex);
+                    const randomIndex = Math.floor(Math.random() * availableIndices.length);
+                    
+                    console.log('随机模式(无历史) - 当前曲目:', currentTrackIndex, 
+                              '随机选择的上一曲目:', availableIndices[randomIndex]);
+                    
+                    return availableIndices[randomIndex];
+                } else {
+                    // 顺序模式：循环播放
+                    const prevIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+                    console.log('顺序模式 - 当前曲目:', currentTrackIndex, '上一曲目:', prevIndex);
+                    return prevIndex;
+                }
+            }
+
+            // 播放/暂停按钮
+            $('#play-pause').click(e => {
+                e.stopPropagation();
+                if (bgm.paused) {
+                    bgm.play();
+                    bgmBtn.addClass('playing');
+                } else {
+                    bgm.pause();
+                    bgmBtn.removeClass('playing');
+                }
+            });
+
+            // 下一首按钮
+            $('#next-track').click(e => {
+                e.stopPropagation();
+                playTrack(getNextTrackIndex());
+            });
+
+            // 上一首按钮
+            $('#prev-track').click(e => {
+                e.stopPropagation();
+                playTrack(getPrevTrackIndex());
+            });
+
+            // 随机播放按钮
+            $('#shuffle').click(e => {
+                e.stopPropagation();
+                isShuffleMode = !isShuffleMode;
+                
+                // 切换随机模式时重置历史记录和队列
+                if (isShuffleMode) {
+                    playHistory = [];
+                    futureQueue = [];
+                }
+                
+                
+                $('#shuffle').toggleClass('active-shuffle', isShuffleMode);
+                
+                // 添加视觉反馈
+                if (isShuffleMode) {
+                    alert('随机播放模式已开启');
+                    console.log('随机播放模式已开启 - 播放历史已重置');
+                } else {
+                    alert('随机播放模式已关闭');
+                    console.log('随机播放模式已关闭 - 恢复顺序播放');
+                }
+            });
+
+            
+            $('.track').click(e => {
+                e.stopPropagation();
+                const index = tracks.indexOf(e.target);
+                playTrack(index);
+            });
+
+            // 当前歌曲播放结束时自动播放下一首
+            bgm.addEventListener('ended', () => {
+                playTrack(getNextTrackIndex());
+            });
+
+            // 初始化第一首歌
+            playTrack(0);
+
+            // 当用户首次与页面交互时自动播放音乐
+            $(document).one('click', () => {
+                if (bgm.paused) {
+                    bgm.play();
+                    bgmBtn.addClass('playing');
+                }
+            });
+
+            
+            initBackgroundFeature();
+
+           
+            window.editMessage = function (button) {
+                const messageElement = $(button).closest('li');
+                const messageId = messageElement.data('message-id');
+                const messageDiv = messageElement.find('.message');
+                const messageContent = messageDiv.find('.message-content');
+                const userName = messageDiv.find('.name').text(); // 获取用户名
+
+               
+                let originalText = '';
+                messageContent.contents().each(function () {
+                    if (this.nodeType === Node.TEXT_NODE) {
+                        originalText += this.nodeValue;
+                    } else if (this.nodeType === Node.ELEMENT_NODE) {
+                        
+                        if (this.tagName.toLowerCase() === 'a') {
+                          
+                            originalText += $(this).attr('href').replace('mailto:', '');
+                        } else {
+                            originalText += $(this).text();
+                        }
+                    }
+                });
+
+                originalText = originalText.trim();
+
+                
+                const editHtml = `
+                    <div class="edit-mode">
+                        <textarea>${originalText}</textarea>
+                        <div class="edit-actions">
+                            <button class="save-btn" onclick="saveEdit(this, '${messageId}')">保存</button>
+                            <button class="cancel-btn" onclick="cancelEdit(this)">取消</button>
+                        </div>
+                    </div>
+                `;
+
+                
+                messageDiv.data('original-content', messageDiv.html());
+                messageDiv.data('original-name', userName); // 保存用户名
+                messageDiv.html(editHtml);
+
+               
+                const textarea = messageDiv.find('textarea');
+                textarea.focus();
+                textarea[0].setSelectionRange(textarea.val().length, textarea.val().length);
+            };
+
+          
+            window.saveEdit = function (button, messageId) {
+                const messageDiv = $(button).closest('.message');
+                const newText = messageDiv.find('textarea').val().trim();
+                const userName = messageDiv.data('original-name') || ''; 
+
+                if (newText) {
+                  
+                    const filteredText = filterRudeWords(newText);
+                    
+                    
+                    con.invoke('UpdateMessage', messageId, filteredText).then(() => {
+                       
+                        let formattedText = formatText(filteredText);
+                        
+                      
+                        formattedText = formattedText
+                            .replaceAll(':)', '😊')
+                            .replaceAll(':(', '😒')
+                            .replaceAll('<3', '❤️')
+                            .replaceAll(':D', '😁')
+                            .replaceAll(';)', '😉')
+                            .replaceAll(':P', '😋')
+                            .replaceAll(':*', '😘')
+                            .replaceAll(':O', '😮')
+                            .replaceAll(':|', '😐')
+                            .replaceAll(':9', '😕')
+                            .replaceAll(':\'(', '😢')
+                            .replaceAll('B)', '😎')
+                            .replaceAll('XD', '😆')
+                            .replaceAll(':angry:', '😡')
+                            .replaceAll(':love:', '😍')
+                            .replaceAll(':hug:', '🤗')
+                            .replaceAll(':think:', '🤔')
+                            .replaceAll(':clap:', '👏')
+                            .replaceAll(':fire:', '🔥')
+                            .replaceAll(':star:', '⭐')
+                            .replaceAll(':heart:', '❤️')
+                            .replaceAll(':+1:', '👍')
+                            .replaceAll(':-1:', '👎')
+                            .replaceAll(':wave:', '👋')
+                            .replaceAll(':pray:', '🙏')
+                            .replaceAll(':party:', '🎉')
+                            .replaceAll(':cool:', '😎')
+                            .replaceAll(':sleep:', '😴')
+                            .replaceAll(':cry:', '😭')
+                            .replaceAll(':rofl:', '🤣')
+                            .replaceAll(':please:', '🥺')
+                            .replaceAll(':wow:', '🤩');
+
+                        formattedText = formattedText.replace(
+                            /(https?:\/\/\S+)/gi,
+                            '<a href="$&" target="_blank">$&</a>'
+                        )
+                        .replace(
+                            /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+                            '<a href="mailto:$&">$&</a>'
+                        )
+                        .replace(
+                            /(\+?[\d\s\-]{8,})/g,
+                            function(match) {
+                                
+                                const phoneNumber = match.replace(/\D/g, '');
+                                return `<a href="https://wa.me/${phoneNumber}" target="_blank" title="在WhatsApp中打开">${match}</a>`;
+                            }
+                        );
+
+                        
+                        const updatedHtml = `
+                            <div class="name">${userName}</div>
+                            <div class="message-content">${formattedText}</div>
+                            <div class="message-actions">
+                                <button onclick="editMessage(this)">✏️</button>
+                                <button onclick="deleteMessage(this)">🗑️</button>
+                            </div>
+                        `;
+                        messageDiv.html(updatedHtml);
+                    }).catch(err => {
+                        console.error('消息更新失败:', err);
+                        alert('消息更新失败: ' + (err.message || '未知错误'));
+                        cancelEdit(button);
+                    });
+                }
+            };
+
+            // 取消编辑
+            window.cancelEdit = function (button) {
+                const messageDiv = $(button).closest('.message');
+                messageDiv.html(messageDiv.data('original-content'));
+            };
+
+            // 删除消息
+            window.deleteMessage = function (button) {
+                if (confirm('确定要删除这条消息吗？')) {
+                    const messageElement = $(button).closest('li');
+                    const messageId = messageElement.data('message-id');
+
+                    if (!messageId) {
+                        console.error('消息ID不存在');
+                        alert('无法删除消息：消息ID不存在');
+                        return;
+                    }
+
+                    console.log('正在删除消息:', messageId);
+
+                    try {
+                        // 先隐藏消息，给用户即时反馈
+                        messageElement.css('opacity', '0.5');
+
+                        con.invoke('DeleteMessage', messageId)
+                            .then(() => {
+                                console.log('消息删除成功:', messageId);
+                               
+                                messageElement.remove();
+                                
+                                
+                                removeMessageFromHistory(messageId);
+                            })
+                            .catch(err => {
+                                console.error('消息删除失败:', err);
+                               
+                                messageElement.css('opacity', '1');
+                                alert('消息删除失败: ' + (err.message || '未知错误'));
+                            });
+                    } catch (err) {
+                        console.error('删除消息时发生错误:', err);
+                        messageElement.css('opacity', '1');
+                        alert('删除消息时发生错误: ' + (err.message || '未知错误'));
+                    }
+                }
+            };
+
+            // 加载表情符号数据
+            function loadEmojis() {
+                
+                const timestamp = new Date().getTime();
+                fetch(`emoji.txt?t=${timestamp}`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('无法加载表情符号数据');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        const emojiContainer = $('#emoji-container');
+                        emojiContainer.empty();
+
+                        // 表情分类
+                        const categories = {
+                            face: ['smile', 'laugh', 'heart_eyes', 'unamused', 'cry', 'cool', 'grin', 'wink', 'yum', 'tongue', 'kiss', 'innocent', 'relieved', 'sleepy', 'scream', 'angry', 'rage', 'sob', 'pleading', 'star_struck', 'smiling_hearts', 'rofl', 'sweat_smile', 'flushed', 'eye_roll', 'grimace', 'lying', 'shush', 'hand_over_mouth', 'monocle', 'nerd', 'smiling_devil', 'halo_smile_face', 'hot_face', 'money_mouth_face', 'face_in_clouds', 'lie_face', 'drool_face', 'cowboy_face', 'partying_face', 'exploding_head'],
+                            gesture: ['thumbs_up', 'thumbs_down', 'pray', 'clap', 'muscle', 'wave', 'hug', 'heart_hands', 'handshake', 'palm_up_hand', 'selfie', 'oncoming_fist', 'pinching_hand', 'victory_hand', 'finger_heart'],
+                            food: ['pizza', 'ice_cream', 'strawberry', 'apple', 'avocado', 'taco', 'hamburger', 'fries', 'hot_dog', 'popcorn', 'coffee', 'cup_with_straw', 'beer', 'wine', 'cake', 'champagne', 'lollipop', 'oden','cupcake','poultry_leg','doughnut','bubble_tea','cookie'],
+                            animal: ['cat', 'dog', 'unicorn', 'joy_cat', 'smirk_cat', 'waery_cat', 'alien_monster', 'crying_cat_face', 'pouting_cat', 'kissing_cat', 'sloth', 'phoenix'],
+                            object: ['heart', 'star', 'fire', 'phone', 'laptop', 'hundred', 'magnifying_glass', 'alarm_clock', 'camera', 'gift', 'books', 'microphone', 'guitar'],
+                            travel: ['rocket', 'airplane', 'car', 'house', 'beach', 'volcano'],
+                            activity: ['music', 'game', 'performing_arts', 'art', 'clapper_board', 'dart', 'soccer', 'basketball', 'game_die', 'circus_tent', 'carousel_horse', 'ferris_wheel', 'tennis', 'yo_yo', 'ping_pong', 'lifting_weights', 'surfing', 'swimming', 'playing_water_polo', 'rowing_boat', 'climbing', 'biking', 'fishing']
+                        };
+
+                        // 解析表情符号数据
+                        const lines = data.split('\n');
+                        console.log(`总共加载了 ${lines.length} 行表情数据`);
+                        
+                        // 记录所有加载的表情代码
+                        const loadedCodes = [];
+                        
+                        lines.forEach(line => {
+                            if (line.trim() === '') return;
+
+                            const [emoji, code] = line.split(':');
+                            if (emoji && code) {
+                                const trimmedCode = code.trim();
+                                loadedCodes.push(trimmedCode);
+                                
+                              
+                                let category = 'other';
+                                for (const [cat, codes] of Object.entries(categories)) {
+                                    if (codes.includes(trimmedCode)) {
+                                        category = cat;
+                                        break;
+                                    }
+                                }
+
+                               
+                                const emojiItem = $('<div>')
+                                    .addClass('emoji-item')
+                                    .attr('data-code', trimmedCode)
+                                    .attr('data-category', category)
+                                    .attr('title', trimmedCode)
+                                    .text(emoji.trim())
+                                    .click(function () {
+                                        insertEmoji(emoji.trim());
+                                    });
+
+                                
+                                emojiContainer.append(emojiItem);
+                                
+                               
+                                console.log(`加载表情: ${emoji.trim()} (${trimmedCode}) - 分类: ${category}`);
+                            }
+                        });
+                        
+                       
+                        for (const [cat, codes] of Object.entries(categories)) {
+                            codes.forEach(code => {
+                                if (!loadedCodes.includes(code)) {
+                                    console.warn(`警告: 分类 ${cat} 中的代码 "${code}" 在emoji.txt中未找到`);
+                                }
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        console.error('加载表情符号数据失败:', error);
+                        $('#emoji-container').html('<p>加载表情符号失败</p>');
+                    });
+            }
+
+           
+            function filterEmojis(searchTerm, category) {
+                $('.emoji-item').each(function () {
+                    const code = $(this).attr('data-code').toLowerCase();
+                    const itemCategory = $(this).attr('data-category');
+
+                    const matchesSearch = code.includes(searchTerm) || searchTerm === '';
+                    const matchesCategory = category === 'all' || itemCategory === category;
+
+                    if (matchesSearch && matchesCategory) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+
+           
+            function insertEmoji(emoji) {
+                const textarea = $('#message')[0];
+                const start = textarea.selectionStart;
+                const end = textarea.selectionEnd;
+                const text = textarea.value;
+                const before = text.substring(0, start);
+                const after = text.substring(end);
+
+                textarea.value = before + emoji + after;
+
+               
+                const newCursorPos = start + emoji.length;
+                textarea.selectionStart = newCursorPos;
+                textarea.selectionEnd = newCursorPos;
+
+             
+                $(textarea).trigger('input');
+
+               
+                textarea.focus();
+            }
+
+            // 初始化背景图片功能
+            function initBackgroundFeature() {
+                // 从localStorage加载背景设置
+                const savedBg = localStorage.getItem('chat-background');
+                const savedOpacity = localStorage.getItem('chat-bg-opacity');
+                
+                // 设置默认透明度
+                const defaultOpacity = 30;
+                let currentOpacity = savedOpacity ? parseInt(savedOpacity) : defaultOpacity;
+                
+                // 更新透明度滑块和显示值
+                $('#bg-opacity-slider').val(currentOpacity);
+                $('.bg-opacity-value').text(currentOpacity + '%');
+                
+                // 应用保存的背景
+                if (savedBg) {
+                    try {
+                        const bgData = JSON.parse(savedBg);
+                        applyBackground(bgData.type, bgData.value, currentOpacity);
+                        
+                        // 标记当前活动的背景
+                        if (bgData.type === 'image') {
+                            $(`.bg-item[data-src="${bgData.value}"]`).addClass('active');
+                        } else if (bgData.type === 'color') {
+                            $(`.bg-item[data-color="${bgData.value}"]`).addClass('active');
+                        } else if (bgData.type === 'custom') {
+                            loadCustomBackgrounds();
+                            setTimeout(() => {
+                                $(`.bg-item[data-custom="${bgData.value}"]`).addClass('active');
+                            }, 100);
+                        }
+                    } catch (e) {
+                        console.error('加载背景设置失败:', e);
+                    }
+                }
+                
+                // 点击预设背景
+                $('.bg-item').not('.color-bg').click(function() {
+                    const src = $(this).data('src');
+                    if (!src) return;
+                    
+                   
+                    $('.bg-item').removeClass('active');
+                    $(this).addClass('active');
+                    
+                   
+                    const opacity = $('#bg-opacity-slider').val();
+                    applyBackground('image', src, opacity);
+                    
+                   
+                    saveBackgroundSettings('image', src, opacity);
+                });
+                
+                // 点击纯色背景
+                $('.color-bg').click(function() {
+                    const color = $(this).data('color');
+                    if (!color) return;
+                    
+                  
+                    $('.bg-item').removeClass('active');
+                    $(this).addClass('active');
+                    
+                   
+                    const opacity = $('#bg-opacity-slider').val();
+                    applyBackground('color', color, opacity);
+                    
+                   
+                    saveBackgroundSettings('color', color, opacity);
+                });
+                
+                // 透明度滑块变化
+                $('#bg-opacity-slider').on('input', function() {
+                    const opacity = $(this).val();
+                    $('.bg-opacity-value').text(opacity + '%');
+                    
+                    // 获取当前背景
+                    const savedBg = localStorage.getItem('chat-background');
+                    if (savedBg) {
+                        const bgData = JSON.parse(savedBg);
+                        
+                        // 应用新透明度
+                        applyBackground(bgData.type, bgData.value, opacity);
+                        
+                        // 保存设置
+                        saveBackgroundSettings(bgData.type, bgData.value, opacity);
+                    }
+                });
+                
+               
+                $('#reset-bg').click(function() {
+                   
+                    $('.bg-item').removeClass('active');
+                    
+                    // 重置背景
+                    $('body').css('background-color', '#f5f5f5');
+                    
+                    // 清除背景图片
+                    const styleEl = document.createElement('style');
+                    styleEl.id = 'dynamic-bg-style';
+                    styleEl.textContent = `
+                        body::before {
+                            background-image: none;
+                            opacity: 0;
+                        }
+                    `;
+                    
+                    
+                    $('#dynamic-bg-style').remove();
+                    
+                  
+                    document.head.appendChild(styleEl);
+                    
+                   
+                    localStorage.removeItem('chat-background');
+                    localStorage.removeItem('chat-bg-opacity');
+                    
+                   
+                    $('#bg-opacity-slider').val(defaultOpacity);
+                    $('.bg-opacity-value').text(defaultOpacity + '%');
+                });
+                
+               
+                $('#upload-bg').click(function() {
+                    $('#bg-upload').click();
+                });
+                
+               
+                $('#bg-upload').change(function(e) {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    
+                    // 检查文件类型
+                    if (!file.type.startsWith('image/')) {
+                        alert('请选择图片文件');
+                        return;
+                    }
+                    
+                    
+                    const maxSizeMB = 2;
+                    const maxSizeBytes = maxSizeMB * 1024 * 1024;
+                    
+                    if (file.size > maxSizeBytes) {
+                        console.log(`图片大小(${(file.size / 1024 / 1024).toFixed(2)}MB)超过限制(${maxSizeMB}MB)，将进行压缩`);
+                        // 压缩图片
+                        compressImage(file, function(compressedImageData) {
+                           
+                            const customBgId = saveCustomBackground(compressedImageData);
+                            
+                        
+                            const opacity = $('#bg-opacity-slider').val();
+                            applyBackground('custom', compressedImageData, opacity);
+                            
+                           
+                            saveBackgroundSettings('custom', customBgId, opacity);
+                            
+                            
+                            loadCustomBackgrounds();
+                        });
+                    } else {
+                      
+                        const reader = new FileReader();
+                        reader.onload = function(event) {
+                            const imageData = event.target.result;
+                            
+                            
+                            const customBgId = saveCustomBackground(imageData);
+                            
+                           
+                            const opacity = $('#bg-opacity-slider').val();
+                            applyBackground('custom', imageData, opacity);
+                            
+                            
+                            saveBackgroundSettings('custom', customBgId, opacity);
+                            
+                            
+                            loadCustomBackgrounds();
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                    
+                    
+                    this.value = '';
+                });
+                
+                // 加载自定义背景
+                loadCustomBackgrounds();
+            }
+            
+            
+            function compressImage(file, callback) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.onload = function() {
+                       
+                        let width = img.width;
+                        let height = img.height;
+                        const maxDimension = 1200; 
+                        
+                        if (width > height && width > maxDimension) {
+                            height = Math.round(height * maxDimension / width);
+                            width = maxDimension;
+                        } else if (height > maxDimension) {
+                            width = Math.round(width * maxDimension / height);
+                            height = maxDimension;
+                        }
+                        
+                        
+                        const canvas = document.createElement('canvas');
+                        canvas.width = width;
+                        canvas.height = height;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0, width, height);
+                        
+                       
+                        let quality = 0.7; 
+                        let dataUrl = canvas.toDataURL('image/jpeg', quality);
+                        
+                        // 如果还是太大，继续降低质量
+                        const maxSizeBytes = 1.5 * 1024 * 1024; 
+                        let attempts = 0;
+                        
+                        function reduceQuality() {
+                           
+                            const base64 = dataUrl.split(',')[1];
+                            const estimatedSize = Math.ceil((base64.length * 3) / 4);
+                            
+                            if (estimatedSize > maxSizeBytes && attempts < 5) {
+                                attempts++;
+                                quality -= 0.1;
+                                if (quality < 0.3) quality = 0.3; 
+                                
+                                console.log(`图片仍然太大(${(estimatedSize / 1024 / 1024).toFixed(2)}MB)，降低质量到${quality.toFixed(1)}`);
+                                dataUrl = canvas.toDataURL('image/jpeg', quality);
+                                reduceQuality();
+                            } else {
+                                console.log(`压缩完成，最终质量: ${quality.toFixed(1)}, 估算大小: ${(estimatedSize / 1024 / 1024).toFixed(2)}MB`);
+                                callback(dataUrl);
+                            }
+                        }
+                        
+                        reduceQuality();
+                    };
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+            
+          
+            function applyBackground(type, value, opacity) {
+                
+                $('body').css('background-color', '#f5f5f5');
+                
+                if (type === 'image' || type === 'custom') {
+                    
+                    document.body.style.setProperty('--chat-bg-image', `url('${value}')`);
+                    document.body.style.setProperty('--chat-bg-opacity', opacity / 100);
+                    
+                    
+                    const styleEl = document.createElement('style');
+                    styleEl.id = 'dynamic-bg-style';
+                    styleEl.textContent = `
+                        body::before {
+                            background-image: url('${value}');
+                            opacity: ${opacity / 100};
+                        }
+                    `;
+                    
+                  
+                    $('#dynamic-bg-style').remove();
+                    
+                    
+                    document.head.appendChild(styleEl);
+                } else if (type === 'color') {
+                   
+                    $('body').css('background-color', value);
+                    
+                    // 清除背景图片
+                    const styleEl = document.createElement('style');
+                    styleEl.id = 'dynamic-bg-style';
+                    styleEl.textContent = `
+                        body::before {
+                            background-image: none;
+                            opacity: 0;
+                        }
+                    `;
+                    
+                    
+                    $('#dynamic-bg-style').remove();
+                    
+                   
+                    document.head.appendChild(styleEl);
+                }
+            }
+            
+            // 保存背景设置
+            function saveBackgroundSettings(type, value, opacity) {
+                
+                let saveValue = value;
+                if (type === 'custom' && value.startsWith('data:')) {
+                    // 为自定义背景生成唯一ID
+                    const customBgId = 'custom-' + new Date().getTime();
+                    
+                    // 保存自定义背景
+                    const customBgs = JSON.parse(localStorage.getItem('chat-custom-backgrounds') || '{}');
+                    customBgs[customBgId] = value;
+                    localStorage.setItem('chat-custom-backgrounds', JSON.stringify(customBgs));
+                    
+                    
+                    saveValue = customBgId;
+                }
+                
+                // 保存背景设置
+                localStorage.setItem('chat-background', JSON.stringify({
+                    type: type,
+                    value: saveValue
+                }));
+                
+                
+                localStorage.setItem('chat-bg-opacity', opacity);
+            }
+            
+         
+            function saveCustomBackground(imageData) {
+               
+                const customBgId = 'custom-' + new Date().getTime();
+                
+                
+                const customBgs = JSON.parse(localStorage.getItem('chat-custom-backgrounds') || '{}');
+                
+                
+                customBgs[customBgId] = imageData;
+                
+               
+                localStorage.setItem('chat-custom-backgrounds', JSON.stringify(customBgs));
+                
+                return customBgId;
+            }
+            
+           
+            function loadCustomBackgrounds() {
+               
+                const customBgs = JSON.parse(localStorage.getItem('chat-custom-backgrounds') || '{}');
+                
+              
+                $('#custom-bg-grid').empty();
+                
+               
+                if (Object.keys(customBgs).length > 0) {
+                    $('#custom-bg-container').addClass('show');
+                    
+                   
+                    for (const [id, imageData] of Object.entries(customBgs)) {
+                        const bgItem = $('<div>')
+                            .addClass('bg-item')
+                            .attr('data-custom', id)
+                            .css('background-image', `url('${imageData}')`)
+                            .click(function() {
+                               
+                                $('.bg-item').removeClass('active');
+                                $(this).addClass('active');
+                                
+                                const opacity = $('#bg-opacity-slider').val();
+                                applyBackground('custom', imageData, opacity);
+                                
+                               
+                                saveBackgroundSettings('custom', id, opacity);
+                            });
+                        
+                      
+                        const deleteBtn = $('<button>')
+                            .addClass('delete-bg')
+                            .html('×')
+                            .attr('title', '删除此背景')
+                            .click(function(e) {
+                                e.stopPropagation();
+                                
+                               
+                                if (confirm('确定要删除这个背景吗？')) {
+                                  
+                                    delete customBgs[id];
+                                    localStorage.setItem('chat-custom-backgrounds', JSON.stringify(customBgs));
+                                    
+                                   
+                                    const savedBg = JSON.parse(localStorage.getItem('chat-background') || '{}');
+                                    if (savedBg.type === 'custom' && savedBg.value === id) {
+                                        $('#reset-bg').click();
+                                    }
+                                    
+                                  
+                                    $(this).parent().remove();
+                                    
+                                    
+                                    if (Object.keys(customBgs).length === 0) {
+                                        $('#custom-bg-container').removeClass('show');
+                                    }
+                                }
+                            });
+                        
+                        
+                        bgItem.append(deleteBtn);
+                        $('#custom-bg-grid').append(bgItem);
+                    }
+                } else {
+                    $('#custom-bg-container').removeClass('show');
+                }
+            }
+        }
+
+        
+        function formatText(text) {
+            
+            let formattedText = $('<div>').text(text).html();
+            
+            
+            formattedText = formattedText.replace(/(\*\*|__)(.*?)\1/g, '<strong>$2</strong>');
+            
+            
+            formattedText = formattedText.replace(/(\*|_)((?!\1|<\/strong>).*?)\1/g, '<em>$2</em>');
+            
+            
+            formattedText = formattedText.replace(/\~(.*?)\~/g, '<u>$1</u>');
+            
+            return formattedText;
+        }
+        
+      
+        function setupSpeechRecognition() {
+            // 检查浏览器是否支持语音识别
+            if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+                console.error('您的浏览器不支持语音识别功能');
+                $('#mic-btn').prop('disabled', true).css('opacity', 0.5).attr('title', 'Speech recognition not supported');
+                return;
+            }
+            
+            
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            const recognition = new SpeechRecognition();
+            
+            
+            recognition.continuous = false; 
+            recognition.interimResults = true; 
+            recognition.lang = 'en-US'; 
+            
+            let isListening = false;
+            let finalTranscript = '';
+            
+           
+            $('#mic-btn').click(function() {
+                if (isListening) {
+                   
+                    recognition.stop();
+                    return;
+                }
+                
+                
+                try {
+                    finalTranscript = '';
+                    recognition.start();
+                    isListening = true;
+                    
+                   
+                    $(this).addClass('listening').attr('title', 'Stop listening');
+                    
+                   
+                    const $messageInput = $('#message');
+                    const originalText = $messageInput.val();
+                    $messageInput.val(originalText + (originalText ? ' ' : '') + '🎤 Listening...');
+                    $messageInput.prop('disabled', true);
+                    
+                } catch (error) {
+                    console.error('启动语音识别时出错:', error);
+                    isListening = false;
+                    $(this).removeClass('listening').attr('title', 'Voice Input');
+                }
+            });
+            
+            
+            recognition.onresult = function(event) {
+                let interimTranscript = '';
+                
+                for (let i = event.resultIndex; i < event.results.length; i++) {
+                    const transcript = event.results[i][0].transcript;
+                    
+                    if (event.results[i].isFinal) {
+                        finalTranscript += transcript;
+                    } else {
+                        interimTranscript += transcript;
+                    }
+                }
+                
+                
+                const $messageInput = $('#message');
+                const originalText = $messageInput.val().replace('🎤 Listening...', '').trim();
+                
+                if (finalTranscript || interimTranscript) {
+                    $messageInput.val(originalText + (originalText ? ' ' : '') + 
+                                     (finalTranscript || interimTranscript));
+                }
+            };
+            
+           
+            recognition.onend = function() {
+                isListening = false;
+                $('#mic-btn').removeClass('listening').attr('title', 'Voice Input');
+                
+                
+                const $messageInput = $('#message');
+                $messageInput.prop('disabled', false);
+                const text = $messageInput.val().replace('🎤 Listening...', '').trim();
+                $messageInput.val(text);
+                
+                
+                $messageInput.trigger('input');
+                
+               
+                $messageInput.focus();
+            };
+            
+           
+            recognition.onerror = function(event) {
+                console.error('语音识别错误:', event.error);
+                isListening = false;
+                $('#mic-btn').removeClass('listening').attr('title', 'Voice Input');
+                
+                
+                const $messageInput = $('#message');
+                $messageInput.prop('disabled', false);
+                const text = $messageInput.val().replace('🎤 Listening...', '').trim();
+                $messageInput.val(text);
+            };
+        }
+
+        
+        function loadUserAvatar() {
+           
+            const defaultAvatar = 'image/default-avatar.png';
+
+          
+            window.avatarUrl = sessionStorage.getItem('avatar') || defaultAvatar;
+            
+           
+            $('#user-avatar').attr('src', window.avatarUrl);
+            
+           
+            try {
+                const currentUser = sessionStorage.getItem('name');
+                const avatarData = window.avatarUrl;
+                
+                
+                const savedAvatars = JSON.parse(localStorage.getItem('chat-user-avatars') || '{}');
+                
+               
+                savedAvatars[currentUser] = avatarData;
+                
+                
+                localStorage.setItem('chat-user-avatars', JSON.stringify(savedAvatars));
+                
+                
+                setTimeout(() => {
+                    shareAvatar(currentUser, avatarData);
+                }, 1000);
+                
+                
+                console.log('当前用户头像数据:', {
+                    currentUser: currentUser,
+                    avatarData: avatarData
+                });
+                console.log('所有保存的头像:', savedAvatars);
+            } catch (e) {
+                console.error('保存头像数据失败:', e);
+            }
+        }
+
+        
+        function shareAvatar(userName, avatarData) {
+            if (con && con.state === signalR.HubConnectionState.Connected) {
+               
+                const avatarSize = new Blob([avatarData]).size;
+                if (avatarSize > 100000) { 
+                    console.warn('头像数据较大，可能影响性能:', (avatarSize / 1024).toFixed(2) + 'KB');
+                }
+                
+                try {
+                    
+                    con.invoke('SendText', userName, `__avatar_data__${avatarData}`);
+                    console.log('头像数据已共享给其他用户');
+                } catch (e) {
+                    console.error('共享头像失败:', e);
+                }
+            }
+        }
+
+        
+        
+        
+        $('#user-list-btn').click(function() {
+            
+            $('#user-overlay').show();
+            $('#user-list-popup').show();
+            
+            
+            $('#user-list-loading').show();
+            $('#user-list-grid').hide();
+            
+            
+            const currentUsers = window.currentUsers || [];
+            updateUserListUI(currentUsers);
+        });
+
+       
+        $('#user-list-popup-close, #user-overlay').click(function() {
+            $('#user-overlay').hide();
+            $('#user-list-popup').hide();
+        });
+
+        
+        $('#user-list-popup').click(function(e) {
+            e.stopPropagation();
+        });
+
+       
+        function updateUserListUI(names) {
+            const count = names.length;
+            
+            
+            $('#popup-user-count').text(count);
+            
+            
+            $('#user-list-loading').hide();
+            
+           
+            $('#user-list-grid').show();
+            
+            
+            $('#user-list-grid').empty();
+            
+            
+            const currentUser = sessionStorage.getItem('name');
+            console.log('当前用户:', currentUser);
+            
+           
+            const defaultAvatar = 'image/default-avatar.png';
+
+           
+            const sortedNames = [...names].sort();
+            console.log('排序后的用户列表:', sortedNames);
+
+            
+            sortedNames.forEach(name => {
+                const isCurrentUser = name === currentUser;
+                console.log(`处理用户: ${name} ${isCurrentUser ? '(当前用户)' : ''}`);
+                
+               
+                let userAvatar = defaultAvatar;
+                
+                if (isCurrentUser) {
+                   
+                    userAvatar = window.avatarUrl || defaultAvatar;
+                    console.log(`当前用户使用会话存储的头像: ${userAvatar}`);
+                }
+                
+                console.log(`最终使用的头像URL (${name}):`, userAvatar);
+                
+                const userCard = $(`
+                    <div class="user-card ${isCurrentUser ? 'current-user' : ''}">
+                        <img class="user-avatar" src="${userAvatar}" alt="${name}" onerror="this.src='image/default-avatar.png'">
+                        <div class="user-name">${name} ${isCurrentUser ? '(you)' : ''}</div>
+                    </div>
+                `);
+                
+                $('#user-list-grid').append(userCard);
+            });
+        }
+
+        // 画板功能
+        let isDrawing = false;
+        const canvas = document.getElementById('drawing-canvas');
+        const ctx = canvas.getContext('2d');
+        let currentColor = 'black';
+        let currentSize = 5;
+        let drawMode = 'pen'; 
+        let currentLineStyle = 'solid';
+        let dashOffset = 0; 
+        let drawingPoints = []; 
+
+        
+        $('#drawing-btn').click(function() {
+            $('#drawing-board-container').css('display', 'flex');
+            clearCanvas();
+        });
+
+        // 关闭画板
+        $('#close-drawing').click(function() {
+            $('#drawing-board-container').css('display', 'none');
+        });
+
+        // 调整笔刷大小
+        $('#brush-size').on('input', function() {
+            currentSize = $(this).val();
+            $('#brush-size-display').text(currentSize + 'px');
+            $('#drawing-pen').width(currentSize).height(currentSize);
+        });
+
+        // 调整颜色
+        $('#brush-color').on('input', function() {
+            const color = $(this).val();
+            currentColor = color;
+            $('#drawing-pen').css('background', color);
+        });
+
+        // 初始化笔刷设置
+        $('#brush-size, #brush-color').trigger('input');
+
+        // 滚轮调整笔刷大小
+        $('#drawing-canvas').on('wheel', function(e) {
+            e.preventDefault();
+            if (e.originalEvent.deltaY < 0) {
+                $('#brush-size')[0].stepUp();
+            } else {
+                $('#brush-size')[0].stepDown();
+            }
+            $('#brush-size').trigger('input');
+        });
+
+        // 线条样式
+        $('#drawing-line-style').on('change', function() {
+            currentLineStyle = $(this).val();
+            dashOffset = 0; 
+        });
+
+        // 橡皮和画笔模式切换
+        let lastPenColor = '#000000';
+        
+        $('#brush-color').on('input', function() {
+            if (drawMode === 'pen') {
+                lastPenColor = $(this).val();
+            }
+        });
+
+        $('#drawing-eraser').click(function() {
+            drawMode = 'eraser';
+            $('#drawing-eraser').addClass('active');
+            $('#drawing-pen-mode').removeClass('active');
+            $('#drawing-canvas').addClass('eraser-cursor');
+            $('#drawing-box').addClass('eraser-mode');
+        });
+
+        $('#drawing-pen-mode').click(function() {
+            drawMode = 'pen';
+            $('#drawing-pen-mode').addClass('active');
+            $('#drawing-eraser').removeClass('active');
+            $('#drawing-canvas').removeClass('eraser-cursor');
+            $('#drawing-box').removeClass('eraser-mode');
+            
+            $('#brush-color').val(lastPenColor).trigger('input');
+        });
+
+       
+        $(document).keydown(function(e) {
+           
+            if ($('#drawing-board-container').css('display') !== 'flex' || $(e.target).is('input, textarea')) {
+                return;
+            }
+            
+            if (e.originalEvent.repeat) return;
+            
+            switch (e.key) {
+                case '0': $('#clear-canvas').click(); break;
+                case '1': $('#brush-color').val('#ff0000'); break;
+                case '2': $('#brush-color').val('#ffa500'); break;
+                case '3': $('#brush-color').val('#ffff00'); break;
+                case '4': $('#brush-color').val('#008000'); break;
+                case '5': $('#brush-color').val('#0000ff'); break;
+                case '6': $('#brush-color').val('#4b0082'); break;
+                case '7': $('#brush-color').val('#ee82ee'); break;
+                case '8': $('#brush-color').val('#000000'); break;
+                case '9': $('#brush-color').val('#808080'); break;
+                case 'e': $('#drawing-eraser').click(); break;
+                case 'p': $('#drawing-pen-mode').click(); break;
+            }
+            $('#brush-color').trigger('input');
+        });
+
+        // 清除画布
+        $('#clear-canvas').click(clearCanvas);
+
+        function clearCanvas() {
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+       
+        clearCanvas();
+
+       
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.shadowBlur = 1;
+
+      
+        function drawLine(a, b, size, color, lineStyle = currentLineStyle) {
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            
+            
+            if (color !== '#ffffff') { 
+                switch (lineStyle) {
+                    case 'dashed':
+                        const dashLength = size * 3;
+                        const dashGap = size * 1.5;
+                        ctx.setLineDash([dashLength, dashGap]);
+                        ctx.lineDashOffset = dashOffset;
+                      
+                        const distance = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
+                        dashOffset = (dashOffset - distance) % (dashLength + dashGap);
+                        break;
+                    case 'dotted':
+                        const dotSize = size * 0.5;
+                        const dotGap = size * 1.5;
+                        ctx.setLineDash([dotSize, dotGap]);
+                        ctx.lineDashOffset = dashOffset;
+                       
+                        const dotDistance = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
+                        dashOffset = (dashOffset - dotDistance) % (dotSize + dotGap);
+                        break;
+                    default:
+                        ctx.setLineDash([]); 
+                }
+            } else {
+                ctx.setLineDash([]);
+            }
+
+            ctx.lineTo(b.x, b.y);
+            ctx.lineWidth = size;
+            ctx.strokeStyle = color;
+            ctx.shadowColor = color;
+            ctx.stroke();
+            ctx.setLineDash([]); 
+        }
+
+        // 绘制曲线函数
+        function drawCurve(a, b, c, size, color, lineStyle = currentLineStyle) {
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            
+           
+            if (color !== '#ffffff') { 
+                switch (lineStyle) {
+                    case 'dashed':
+                        const dashLength = size * 3;
+                        const dashGap = size * 1.5;
+                        ctx.setLineDash([dashLength, dashGap]);
+                        ctx.lineDashOffset = dashOffset;
+                       
+                        const curveDistance = Math.sqrt(Math.pow(c.x - a.x, 2) + Math.pow(c.y - a.y, 2)) * 1.2;
+                        dashOffset = (dashOffset - curveDistance) % (dashLength + dashGap);
+                        break;
+                    case 'dotted':
+                        const dotSize = size * 0.5;
+                        const dotGap = size * 1.5;
+                        ctx.setLineDash([dotSize, dotGap]);
+                        ctx.lineDashOffset = dashOffset;
+                       
+                        const dotCurveDistance = Math.sqrt(Math.pow(c.x - a.x, 2) + Math.pow(c.y - a.y, 2)) * 1.2;
+                        dashOffset = (dashOffset - dotCurveDistance) % (dotSize + dotGap);
+                        break;
+                    default:
+                        ctx.setLineDash([]); 
+                }
+            } else {
+                ctx.setLineDash([]); 
+            }
+
+            ctx.quadraticCurveTo(b.x, b.y, c.x, c.y);
+            ctx.lineWidth = size;
+            ctx.strokeStyle = color;
+            ctx.shadowColor = color;
+            ctx.stroke();
+            ctx.setLineDash([]); 
+        }
+
+        // 计算中点
+        function mid(a, b) {
+            return {
+                x: (a.x + b.x) / 2,
+                y: (a.y + b.y) / 2,
+            };
+        }
+
+        // 图片处理函数
+        function drawImage(url) {
+            return new Promise(resolve => {
+                const img = new Image();
+                img.onload = function() {
+                    ctx.drawImage(img, 0, 0);
+                    resolve();
+                };
+                img.src = url;
+            });
+        }
+
+       
+        $('#drawing-image').click(function() {
+            $('#drawing-file').click();
+        });
+
+        $('#drawing-file').change(function(e) {
+            const file = e.target.files[0];
+            if (file && file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const img = new Image();
+                    img.onload = function() {
+                        
+                        const scale = Math.min(
+                            canvas.width / img.width,
+                            canvas.height / img.height
+                        ) * 0.8; 
+                        
+                      
+                        clearCanvas();
+                        
+                        
+                        const x = (canvas.width - img.width * scale) / 2;
+                        const y = (canvas.height - img.height * scale) / 2;
+                        
+                        ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+                    };
+                    img.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+            e.target.value = null; 
+        });
+
+       
+        $('#drawing-download').click(function() {
+            const a = document.createElement('a');
+            a.href = canvas.toDataURL('image/png');
+            a.download = 'drawing_' + Date.now() + '.png';
+            a.click();
+        });
+
+        
+        canvas.addEventListener('mousedown', startDrawing);
+        document.addEventListener('mousemove', draw);
+        document.addEventListener('mouseup', stopDrawing);
+        
+
+        
+        canvas.addEventListener('touchstart', handleTouch);
+        document.addEventListener('touchmove', handleTouch, { passive: false });
+        document.addEventListener('touchend', stopDrawing);
+        document.addEventListener('touchcancel', stopDrawing);
+
+        function startDrawing(e) {
+            isDrawing = true;
+            drawingPoints = [];
+            
+            
+            const rect = canvas.getBoundingClientRect();
+            let x, y;
+            
+            if (e.type.includes('mouse')) {
+                x = e.clientX - rect.left;
+                y = e.clientY - rect.top;
+            } else {
+                x = e.touches[0].clientX - rect.left;
+                y = e.touches[0].clientY - rect.top;
+            }
+            
+            
+            drawingPoints.push({
+                x: x,
+                y: y
+            });
+            
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+            
+           
+            const rect = canvas.getBoundingClientRect();
+            let x, y;
+            
+            if (e.type.includes('mouse')) {
+                x = e.clientX - rect.left;
+                y = e.clientY - rect.top;
+            } else {
+                x = e.touches[0].clientX - rect.left;
+                y = e.touches[0].clientY - rect.top;
+            }
+            
+           
+            const isInCanvas = x >= 0 && x <= canvas.width && y >= 0 && y <= canvas.height;
+            
+            
+            drawingPoints.push({
+                x: x,
+                y: y
+            });
+            
+           
+            if (drawingPoints.length > 3) {
+                drawingPoints = drawingPoints.slice(-3);
+            }
+            
+            
+            if (!isInCanvas) return;
+            
+            const size = currentSize;
+            const color = drawMode === 'pen' ? currentColor : '#ffffff';
+            const lineStyle = drawMode === 'pen' ? currentLineStyle : 'solid';
+            
+           
+            if (drawingPoints.length === 2) {
+                const a = drawingPoints[0];
+                const b = mid(drawingPoints[0], drawingPoints[1]);
+                drawLine(a, b, size, color, lineStyle);
+            } else if (drawingPoints.length === 3) {
+                const a = mid(drawingPoints[0], drawingPoints[1]);
+                const b = drawingPoints[1];
+                const c = mid(drawingPoints[1], drawingPoints[2]);
+                drawCurve(a, b, c, size, color, lineStyle);
+            }
+        }
+
+        function stopDrawing() {
+            if (!isDrawing) return;
+            
+            const size = currentSize;
+            const color = drawMode === 'pen' ? currentColor : '#ffffff';
+            const lineStyle = drawMode === 'pen' ? currentLineStyle : 'solid';
+            
+           
+            if (drawingPoints.length >= 2) {
+                const a = mid(drawingPoints[drawingPoints.length - 2], drawingPoints[drawingPoints.length - 1]);
+                const b = drawingPoints[drawingPoints.length - 1];
+                drawLine(a, b, size, color, lineStyle);
+            }
+            
+            isDrawing = false;
+            drawingPoints = [];
+            ctx.beginPath();
+        }
+
+        function handleTouch(e) {
+            e.preventDefault();
+            if (e.type === 'touchstart') {
+                startDrawing(e);
+            } else if (e.type === 'touchmove') {
+                draw(e);
+            }
+        }
+
+        
+        canvas.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        
+        $('#send-drawing').click(function() {
+            const imageUrl = canvas.toDataURL('image/png');
+            con.invoke('SendImage', name, imageUrl);
+            $('#drawing-board-container').css('display', 'none');
+        });
+    </script>
+
+</script>
+
+</body>
+
+</html>
+
+

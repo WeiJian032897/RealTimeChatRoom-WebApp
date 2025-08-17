@@ -1,0 +1,6131 @@
+{
+  "Version": 1,
+  "Hash": "p/shVVGhFuZZ0p2tBUecZP/tSOhlegOD7g4HeV5ccig=",
+  "Source": "ChatRT",
+  "BasePath": "_content/ChatRT",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ChatRT\\wwwroot",
+      "Source": "ChatRT",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\9nvgnd9j28-h4mi6u31sv.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "rudewords#[.{fingerprint=h4mi6u31sv}]?.txt.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "u93gftwfh8",
+      "Integrity": "kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\cdm6ftunpa-dkebilxcne.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/user-leave#[.{fingerprint=dkebilxcne}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "c8t1mrl9qu",
+      "Integrity": "PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\doyx0k7o26-s3zxdq3ux5.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/message-sent#[.{fingerprint=s3zxdq3ux5}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "u8b7kfo217",
+      "Integrity": "Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\edc7zdjslh-adt278v6j3.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/message-received#[.{fingerprint=adt278v6j3}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "eyqcoh8puq",
+      "Integrity": "ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\hqp0jzs7y5-oa8gecsfn6.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "usernames#[.{fingerprint=oa8gecsfn6}]?.txt.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "95z0neyns6",
+      "Integrity": "7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\lvtxa0ym37-yarksv8zms.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "css/app#[.{fingerprint=yarksv8zms}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "00losbvqvj",
+      "Integrity": "UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nm4zegs6te-pmg9yt0pkc.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "emoji#[.{fingerprint=pmg9yt0pkc}]?.txt.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bhfmjf2aqz",
+      "Integrity": "3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nsahp1912j-ulfggd9q7t.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "js/app#[.{fingerprint=ulfggd9q7t}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "te5e1m3xxe",
+      "Integrity": "G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\s717947fsd-u4a4snvg5p.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "chat#[.{fingerprint=u4a4snvg5p}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zdxca86cdb",
+      "Integrity": "B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\uh0vj7khkj-s2u9xvw35r.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/user-join#[.{fingerprint=s2u9xvw35r}]?.wav.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "erxou0wmxk",
+      "Integrity": "FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\x4tiqsbbwa-2evsiihqbl.gz",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "index#[.{fingerprint=2evsiihqbl}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "7bovlak4hs",
+      "Integrity": "02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm1.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm1#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t4blb1yb97",
+      "Integrity": "nZql35LgDztQCw5v5cBF0MoOQ/tW9A/ENyHos3yDPWw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm1.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm10.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm10#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9aois0d5kl",
+      "Integrity": "cfet1xqRNXM7K9qz0kxBbFVeLdmGLD3GBrlPCPaHbU4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm10.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm11.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm11#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k3d2nlz78c",
+      "Integrity": "MHaG1RKARnjsyf5aU3AecxKGwgNmyugXDxQXCBvzo4E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm11.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm12.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm12#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q9fv9d7fnz",
+      "Integrity": "8nNGZpQ5X1Cz/lkKzyrdsPuyOX5J5Pb5CbhiloUzlbs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm12.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm2.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm2#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j2xxvm8lx",
+      "Integrity": "DIgVaJjBSXAKVwXbbFX4eRshrw3igMgfuqoOR1Kzx6s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm2.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm3.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm3#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ld0iphkvod",
+      "Integrity": "l5Aq3hgC6gPlJgHUtgqqwhtgsAyktxs/sNythL9fFxQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm3.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm4.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm4#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "axomle8wsy",
+      "Integrity": "rtTT/3Ss2J02aVN8rQha9uBjnIYXZ9giZImnPgQRKv4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm4.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm5.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm5#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v6oftez4wn",
+      "Integrity": "N42LwHAarDNGLPTPlvqz9OEQ4fDkMgs8I9Xdnn9BEiM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm5.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm6.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm6#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1d0k6g2tr3",
+      "Integrity": "K1uLZJaTvWXMmCFf/R8ucWnrdSumIb44sRIuhSlt/PE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm6.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm7.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm7#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n0mxm2nf4h",
+      "Integrity": "ScQWx+DVY9/9xEs9TwnQ7jsKOC39JnE7hKlRS47DyXU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm7.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm8.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm8#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zjkxs6di6j",
+      "Integrity": "T6orcZyzGw1ibF/OnTut0HHcfL7Xs2PB0whSbHuNeKo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm8.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm9.mp3",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/bgm9#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uwtrhbph6m",
+      "Integrity": "Ll0FNm5MY1FjTtCFtTAWe9lVKr1e6FUfoMrSFLb1aRU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\bgm9.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/message-received#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "adt278v6j3",
+      "Integrity": "LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\message-received.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/message-sent#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s3zxdq3ux5",
+      "Integrity": "CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\message-sent.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/user-join#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s2u9xvw35r",
+      "Integrity": "hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\user-join.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "audio/user-leave#[.{fingerprint}]?.wav",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dkebilxcne",
+      "Integrity": "gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\user-leave.wav"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "chat#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u4a4snvg5p",
+      "Integrity": "sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chat.html"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yarksv8zms",
+      "Integrity": "On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "emoji#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pmg9yt0pkc",
+      "Integrity": "cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\emoji.txt"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\default-avatar.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/default-avatar#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "epsvnqday0",
+      "Integrity": "EhKtLmnhbCZC33fHXSBiXSSIUYyoe6JHXBFIcUYTG1w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\default-avatar.png"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "je7k4sgs5c",
+      "Integrity": "hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon1.png",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "image/favicon1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9m97oqd452",
+      "Integrity": "j0P1ZVLgGlHl+mpKvZRSi5Qhs5x5SHiTOw0NA/CBcdA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\favicon1.png"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg1.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ig5gk2kd3c",
+      "Integrity": "XiRljRgRe1GM7sItXIj+Av0q+W2FvT3auDCFfPRkHEE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg2.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2pyuinpele",
+      "Integrity": "Jik1B41jEwktLcSVWGN92Q/OD2UCdsgU1rMQibhL9is=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg3.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jauzpblrll",
+      "Integrity": "G1l1V20GXIVGO0xzo3BLETw7ImndqiL5QQCBzPH2SIA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg4.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r76svrw237",
+      "Integrity": "d1nrSm5lt6JYdQRX3vqhzVcgqehcmmXHme5NZ+E3rto=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg5.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9zdrvfkm2",
+      "Integrity": "07q0zmuQHQQXyQ8gEFCImduAk3sKBW6uhA7ZaQSdD10=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg6.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d0fyg3at52",
+      "Integrity": "g6Os2FaPQpmLkpFpgY1TUzyvy0ahlWye8HLZU/ZKaJ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg7.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "72x30sbuit",
+      "Integrity": "4RU8XOl9YyWVvTdMgT4kHlpgKq6kg50QhQAtyjO6oSU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg8.jpg",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "img/bg8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nedfz6jn3u",
+      "Integrity": "n7z8ql5YHyl3Oe2Mtk4FO5NgPy0D9iCwqKLnzMjRs1Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2evsiihqbl",
+      "Integrity": "Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ulfggd9q7t",
+      "Integrity": "AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "rudewords#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4mi6u31sv",
+      "Integrity": "f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\rudewords.txt"
+    },
+    {
+      "Identity": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt",
+      "SourceId": "ChatRT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\",
+      "BasePath": "_content/ChatRT",
+      "RelativePath": "usernames#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oa8gecsfn6",
+      "Integrity": "AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\usernames.txt"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "audio/bgm1.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2259524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nZql35LgDztQCw5v5cBF0MoOQ/tW9A/ENyHos3yDPWw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:36:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nZql35LgDztQCw5v5cBF0MoOQ/tW9A/ENyHos3yDPWw="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm1.t4blb1yb97.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2259524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nZql35LgDztQCw5v5cBF0MoOQ/tW9A/ENyHos3yDPWw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:36:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t4blb1yb97"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm1.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nZql35LgDztQCw5v5cBF0MoOQ/tW9A/ENyHos3yDPWw="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm10.9aois0d5kl.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm10.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6091474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfet1xqRNXM7K9qz0kxBbFVeLdmGLD3GBrlPCPaHbU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:49:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9aois0d5kl"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm10.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfet1xqRNXM7K9qz0kxBbFVeLdmGLD3GBrlPCPaHbU4="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm10.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm10.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6091474"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfet1xqRNXM7K9qz0kxBbFVeLdmGLD3GBrlPCPaHbU4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:49:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfet1xqRNXM7K9qz0kxBbFVeLdmGLD3GBrlPCPaHbU4="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm11.k3d2nlz78c.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm11.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3603154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MHaG1RKARnjsyf5aU3AecxKGwgNmyugXDxQXCBvzo4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:31:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k3d2nlz78c"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm11.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MHaG1RKARnjsyf5aU3AecxKGwgNmyugXDxQXCBvzo4E="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm11.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm11.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3603154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MHaG1RKARnjsyf5aU3AecxKGwgNmyugXDxQXCBvzo4E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:31:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MHaG1RKARnjsyf5aU3AecxKGwgNmyugXDxQXCBvzo4E="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm12.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm12.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4322349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8nNGZpQ5X1Cz/lkKzyrdsPuyOX5J5Pb5CbhiloUzlbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8nNGZpQ5X1Cz/lkKzyrdsPuyOX5J5Pb5CbhiloUzlbs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm12.q9fv9d7fnz.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm12.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4322349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8nNGZpQ5X1Cz/lkKzyrdsPuyOX5J5Pb5CbhiloUzlbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 05:29:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q9fv9d7fnz"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm12.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8nNGZpQ5X1Cz/lkKzyrdsPuyOX5J5Pb5CbhiloUzlbs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm2.0j2xxvm8lx.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5746030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DIgVaJjBSXAKVwXbbFX4eRshrw3igMgfuqoOR1Kzx6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 12:59:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j2xxvm8lx"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm2.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIgVaJjBSXAKVwXbbFX4eRshrw3igMgfuqoOR1Kzx6s="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm2.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5746030"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DIgVaJjBSXAKVwXbbFX4eRshrw3igMgfuqoOR1Kzx6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 12:59:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DIgVaJjBSXAKVwXbbFX4eRshrw3igMgfuqoOR1Kzx6s="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm3.ld0iphkvod.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm3.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6751341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5Aq3hgC6gPlJgHUtgqqwhtgsAyktxs/sNythL9fFxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:01:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ld0iphkvod"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm3.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5Aq3hgC6gPlJgHUtgqqwhtgsAyktxs/sNythL9fFxQ="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm3.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm3.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6751341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l5Aq3hgC6gPlJgHUtgqqwhtgsAyktxs/sNythL9fFxQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:01:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l5Aq3hgC6gPlJgHUtgqqwhtgsAyktxs/sNythL9fFxQ="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm4.axomle8wsy.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm4.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6495849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtTT/3Ss2J02aVN8rQha9uBjnIYXZ9giZImnPgQRKv4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "axomle8wsy"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm4.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtTT/3Ss2J02aVN8rQha9uBjnIYXZ9giZImnPgQRKv4="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm4.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm4.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6495849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rtTT/3Ss2J02aVN8rQha9uBjnIYXZ9giZImnPgQRKv4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:33:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rtTT/3Ss2J02aVN8rQha9uBjnIYXZ9giZImnPgQRKv4="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm5.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm5.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5930977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N42LwHAarDNGLPTPlvqz9OEQ4fDkMgs8I9Xdnn9BEiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N42LwHAarDNGLPTPlvqz9OEQ4fDkMgs8I9Xdnn9BEiM="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm5.v6oftez4wn.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm5.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5930977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N42LwHAarDNGLPTPlvqz9OEQ4fDkMgs8I9Xdnn9BEiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:52:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v6oftez4wn"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm5.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N42LwHAarDNGLPTPlvqz9OEQ4fDkMgs8I9Xdnn9BEiM="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm6.1d0k6g2tr3.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm6.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5854491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1uLZJaTvWXMmCFf/R8ucWnrdSumIb44sRIuhSlt/PE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 14:42:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1d0k6g2tr3"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm6.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1uLZJaTvWXMmCFf/R8ucWnrdSumIb44sRIuhSlt/PE="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm6.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm6.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5854491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1uLZJaTvWXMmCFf/R8ucWnrdSumIb44sRIuhSlt/PE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 14:42:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1uLZJaTvWXMmCFf/R8ucWnrdSumIb44sRIuhSlt/PE="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm7.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm7.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6585502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScQWx+DVY9/9xEs9TwnQ7jsKOC39JnE7hKlRS47DyXU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:41:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQWx+DVY9/9xEs9TwnQ7jsKOC39JnE7hKlRS47DyXU="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm7.n0mxm2nf4h.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm7.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6585502"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScQWx+DVY9/9xEs9TwnQ7jsKOC39JnE7hKlRS47DyXU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:41:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n0mxm2nf4h"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm7.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScQWx+DVY9/9xEs9TwnQ7jsKOC39JnE7hKlRS47DyXU="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm8.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm8.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7408672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T6orcZyzGw1ibF/OnTut0HHcfL7Xs2PB0whSbHuNeKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:44:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T6orcZyzGw1ibF/OnTut0HHcfL7Xs2PB0whSbHuNeKo="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm8.zjkxs6di6j.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm8.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7408672"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T6orcZyzGw1ibF/OnTut0HHcfL7Xs2PB0whSbHuNeKo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:44:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zjkxs6di6j"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm8.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T6orcZyzGw1ibF/OnTut0HHcfL7Xs2PB0whSbHuNeKo="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm9.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm9.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7496444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ll0FNm5MY1FjTtCFtTAWe9lVKr1e6FUfoMrSFLb1aRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:45:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ll0FNm5MY1FjTtCFtTAWe9lVKr1e6FUfoMrSFLb1aRU="
+        }
+      ]
+    },
+    {
+      "Route": "audio/bgm9.uwtrhbph6m.mp3",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\bgm9.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7496444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ll0FNm5MY1FjTtCFtTAWe9lVKr1e6FUfoMrSFLb1aRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:45:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uwtrhbph6m"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/bgm9.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ll0FNm5MY1FjTtCFtTAWe9lVKr1e6FUfoMrSFLb1aRU="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.adt278v6j3.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\edc7zdjslh-adt278v6j3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006061635"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164971"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "adt278v6j3"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-received.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.adt278v6j3.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "adt278v6j3"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-received.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.adt278v6j3.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\edc7zdjslh-adt278v6j3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "adt278v6j3"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-received.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\edc7zdjslh-adt278v6j3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000006061635"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164971"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-received.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "234556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LvgRs8NGb78nonadCAEsT3L2mdYRy72bqJrxNsbhB4Y="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-received.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\edc7zdjslh-adt278v6j3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:37:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ijAIU04wHAHv0FplVdcaLfXfDTvfmgPADNA/o+AKLSo="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.s3zxdq3ux5.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\doyx0k7o26-s3zxdq3ux5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000004868905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205384"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3zxdq3ux5"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-sent.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.s3zxdq3ux5.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "345970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3zxdq3ux5"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-sent.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.s3zxdq3ux5.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\doyx0k7o26-s3zxdq3ux5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s3zxdq3ux5"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/message-sent.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\doyx0k7o26-s3zxdq3ux5.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000004868905"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205384"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\message-sent.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "345970"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CEt4Rj4w2uSqxe2/npyTze5ezkpKaINS5qK2aG+bH0o="
+        }
+      ]
+    },
+    {
+      "Route": "audio/message-sent.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\doyx0k7o26-s3zxdq3ux5.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "205384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:33:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Upv3JqCZoIHp5eDY9qmJ2widE2XGOKaLp6MximraNH0="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.s2u9xvw35r.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\uh0vj7khkj-s2u9xvw35r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000005869233"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170379"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2u9xvw35r"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-join.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.s2u9xvw35r.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "279260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2u9xvw35r"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-join.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.s2u9xvw35r.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\uh0vj7khkj-s2u9xvw35r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s2u9xvw35r"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-join.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\uh0vj7khkj-s2u9xvw35r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000005869233"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170379"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-join.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "279260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF2s171LaL0mHfN5r6gQv6ITN/kQ0h57QCPAvjoKVFs="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-join.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\uh0vj7khkj-s2u9xvw35r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170379"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:35:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FuHw2PkGjuTzjd0y87tQq53RzL74sZCl/jzapZkS46M="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.dkebilxcne.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\cdm6ftunpa-dkebilxcne.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000003626368"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275757"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dkebilxcne"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-leave.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.dkebilxcne.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "344000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dkebilxcne"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-leave.wav"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.dkebilxcne.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\cdm6ftunpa-dkebilxcne.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dkebilxcne"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/user-leave.wav.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\cdm6ftunpa-dkebilxcne.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000003626368"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275757"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.wav",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\audio\\user-leave.wav",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "344000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gwsgGbIflTLRzyvz67k5GcJNkrkqKqItIxOTpLj/tHI="
+        }
+      ]
+    },
+    {
+      "Route": "audio/user-leave.wav.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\cdm6ftunpa-dkebilxcne.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "275757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/wav"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 09 Mar 2025 13:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PPziE+ieFwgq7OzhisA09OVXVgIe0V+qR8qtKr/xjUM="
+        }
+      ]
+    },
+    {
+      "Route": "chat.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\s717947fsd-u4a4snvg5p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000040739835"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24545"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214="
+        }
+      ]
+    },
+    {
+      "Route": "chat.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214="
+        }
+      ]
+    },
+    {
+      "Route": "chat.html.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\s717947fsd-u4a4snvg5p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU="
+        }
+      ]
+    },
+    {
+      "Route": "chat.u4a4snvg5p.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\s717947fsd-u4a4snvg5p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000040739835"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24545"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u4a4snvg5p"
+        },
+        {
+          "Name": "label",
+          "Value": "chat.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214="
+        }
+      ]
+    },
+    {
+      "Route": "chat.u4a4snvg5p.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u4a4snvg5p"
+        },
+        {
+          "Name": "label",
+          "Value": "chat.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sqvqfoipuersS4qtEN/xP0g1F9hgS2X0Wt0MhJ19214="
+        }
+      ]
+    },
+    {
+      "Route": "chat.u4a4snvg5p.html.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\s717947fsd-u4a4snvg5p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 09:05:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u4a4snvg5p"
+        },
+        {
+          "Name": "label",
+          "Value": "chat.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B/4cXTBzl54wr0+KaDUkuwi24P86l/wZvEJt48fObMU="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\lvtxa0ym37-yarksv8zms.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001567398119"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\lvtxa0ym37-yarksv8zms.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.yarksv8zms.css",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\lvtxa0ym37-yarksv8zms.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001567398119"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yarksv8zms"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.yarksv8zms.css",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yarksv8zms"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-On/3cn+B8ncmCpLmgVTm8Lf1RkPW9tma/kcBBShi3wI="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.yarksv8zms.css.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\lvtxa0ym37-yarksv8zms.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:26:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yarksv8zms"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UJj0ZcT+as9w/IJQq6qKRahGX9lJY2ClLSbJjBDC+Bc="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.pmg9yt0pkc.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nm4zegs6te-pmg9yt0pkc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000800640512"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pmg9yt0pkc"
+        },
+        {
+          "Name": "label",
+          "Value": "emoji.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.pmg9yt0pkc.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2130"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pmg9yt0pkc"
+        },
+        {
+          "Name": "label",
+          "Value": "emoji.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.pmg9yt0pkc.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nm4zegs6te-pmg9yt0pkc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pmg9yt0pkc"
+        },
+        {
+          "Name": "label",
+          "Value": "emoji.txt.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nm4zegs6te-pmg9yt0pkc.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000800640512"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\emoji.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2130"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cfK6wrgRoLB8FqQgDSKJM2T/KMhg80vDJ4F8cptjMzo="
+        }
+      ]
+    },
+    {
+      "Route": "emoji.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nm4zegs6te-pmg9yt0pkc.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1248"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 11:00:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3ybJHnEaEOMcBUREBdQZF1ZlaYUO4Uga2b5ImAGw+QU="
+        }
+      ]
+    },
+    {
+      "Route": "image/default-avatar.epsvnqday0.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\default-avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EhKtLmnhbCZC33fHXSBiXSSIUYyoe6JHXBFIcUYTG1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 13:11:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "epsvnqday0"
+        },
+        {
+          "Name": "label",
+          "Value": "image/default-avatar.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EhKtLmnhbCZC33fHXSBiXSSIUYyoe6JHXBFIcUYTG1w="
+        }
+      ]
+    },
+    {
+      "Route": "image/default-avatar.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\default-avatar.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EhKtLmnhbCZC33fHXSBiXSSIUYyoe6JHXBFIcUYTG1w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 13:11:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EhKtLmnhbCZC33fHXSBiXSSIUYyoe6JHXBFIcUYTG1w="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon.je7k4sgs5c.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "je7k4sgs5c"
+        },
+        {
+          "Name": "label",
+          "Value": "image/favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1745"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 08:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSmsuNzFvoPx6eQy+HhdR89fEIpUzvi/PIdd7Fhhfdo="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon1.9m97oqd452.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j0P1ZVLgGlHl+mpKvZRSi5Qhs5x5SHiTOw0NA/CBcdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:22:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9m97oqd452"
+        },
+        {
+          "Name": "label",
+          "Value": "image/favicon1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0P1ZVLgGlHl+mpKvZRSi5Qhs5x5SHiTOw0NA/CBcdA="
+        }
+      ]
+    },
+    {
+      "Route": "image/favicon1.png",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\image\\favicon1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j0P1ZVLgGlHl+mpKvZRSi5Qhs5x5SHiTOw0NA/CBcdA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 05 Apr 2025 10:22:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j0P1ZVLgGlHl+mpKvZRSi5Qhs5x5SHiTOw0NA/CBcdA="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg1.ig5gk2kd3c.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5252433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XiRljRgRe1GM7sItXIj+Av0q+W2FvT3auDCFfPRkHEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:13:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ig5gk2kd3c"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XiRljRgRe1GM7sItXIj+Av0q+W2FvT3auDCFfPRkHEE="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg1.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5252433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XiRljRgRe1GM7sItXIj+Av0q+W2FvT3auDCFfPRkHEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:13:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XiRljRgRe1GM7sItXIj+Av0q+W2FvT3auDCFfPRkHEE="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg2.2pyuinpele.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4227464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jik1B41jEwktLcSVWGN92Q/OD2UCdsgU1rMQibhL9is=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:19:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2pyuinpele"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jik1B41jEwktLcSVWGN92Q/OD2UCdsgU1rMQibhL9is="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg2.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4227464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jik1B41jEwktLcSVWGN92Q/OD2UCdsgU1rMQibhL9is=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:19:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jik1B41jEwktLcSVWGN92Q/OD2UCdsgU1rMQibhL9is="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg3.jauzpblrll.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4244366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G1l1V20GXIVGO0xzo3BLETw7ImndqiL5QQCBzPH2SIA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:16:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jauzpblrll"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G1l1V20GXIVGO0xzo3BLETw7ImndqiL5QQCBzPH2SIA="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg3.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4244366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G1l1V20GXIVGO0xzo3BLETw7ImndqiL5QQCBzPH2SIA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:16:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G1l1V20GXIVGO0xzo3BLETw7ImndqiL5QQCBzPH2SIA="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg4.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3599263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1nrSm5lt6JYdQRX3vqhzVcgqehcmmXHme5NZ+E3rto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:16:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1nrSm5lt6JYdQRX3vqhzVcgqehcmmXHme5NZ+E3rto="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg4.r76svrw237.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3599263"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1nrSm5lt6JYdQRX3vqhzVcgqehcmmXHme5NZ+E3rto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:16:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r76svrw237"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1nrSm5lt6JYdQRX3vqhzVcgqehcmmXHme5NZ+E3rto="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg5.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3335727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07q0zmuQHQQXyQ8gEFCImduAk3sKBW6uhA7ZaQSdD10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:37:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-07q0zmuQHQQXyQ8gEFCImduAk3sKBW6uhA7ZaQSdD10="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg5.v9zdrvfkm2.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3335727"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"07q0zmuQHQQXyQ8gEFCImduAk3sKBW6uhA7ZaQSdD10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:37:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9zdrvfkm2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-07q0zmuQHQQXyQ8gEFCImduAk3sKBW6uhA7ZaQSdD10="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg6.d0fyg3at52.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6200937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6Os2FaPQpmLkpFpgY1TUzyvy0ahlWye8HLZU/ZKaJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d0fyg3at52"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g6Os2FaPQpmLkpFpgY1TUzyvy0ahlWye8HLZU/ZKaJ4="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg6.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6200937"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g6Os2FaPQpmLkpFpgY1TUzyvy0ahlWye8HLZU/ZKaJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:17:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g6Os2FaPQpmLkpFpgY1TUzyvy0ahlWye8HLZU/ZKaJ4="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg7.72x30sbuit.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4254859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4RU8XOl9YyWVvTdMgT4kHlpgKq6kg50QhQAtyjO6oSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "72x30sbuit"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4RU8XOl9YyWVvTdMgT4kHlpgKq6kg50QhQAtyjO6oSU="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg7.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4254859"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4RU8XOl9YyWVvTdMgT4kHlpgKq6kg50QhQAtyjO6oSU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 14:19:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4RU8XOl9YyWVvTdMgT4kHlpgKq6kg50QhQAtyjO6oSU="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg8.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7729804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n7z8ql5YHyl3Oe2Mtk4FO5NgPy0D9iCwqKLnzMjRs1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:43:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n7z8ql5YHyl3Oe2Mtk4FO5NgPy0D9iCwqKLnzMjRs1Y="
+        }
+      ]
+    },
+    {
+      "Route": "img/bg8.nedfz6jn3u.jpg",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\img\\bg8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7729804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n7z8ql5YHyl3Oe2Mtk4FO5NgPy0D9iCwqKLnzMjRs1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:43:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nedfz6jn3u"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bg8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n7z8ql5YHyl3Oe2Mtk4FO5NgPy0D9iCwqKLnzMjRs1Y="
+        }
+      ]
+    },
+    {
+      "Route": "index.2evsiihqbl.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\x4tiqsbbwa-2evsiihqbl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000217675229"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4593"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2evsiihqbl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs="
+        }
+      ]
+    },
+    {
+      "Route": "index.2evsiihqbl.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18050"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2evsiihqbl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs="
+        }
+      ]
+    },
+    {
+      "Route": "index.2evsiihqbl.html.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\x4tiqsbbwa-2evsiihqbl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2evsiihqbl"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\x4tiqsbbwa-2evsiihqbl.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000217675229"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4593"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18050"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fgit4hlQB8DZM6Q4s66kZlczzR4nX56zn8WWsbCrxvs="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\x4tiqsbbwa-2evsiihqbl.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4593"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 07:14:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-02nCPmH8YH8G0Ln23WQ7SCLV9sp+TcjpNFyNPGM06tA="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nsahp1912j-ulfggd9q7t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001265822785"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "789"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nsahp1912j-ulfggd9q7t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.ulfggd9q7t.js",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nsahp1912j-ulfggd9q7t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001265822785"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "789"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulfggd9q7t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.ulfggd9q7t.js",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulfggd9q7t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AieFUtEeElIvyEnMCpVWGnscH0rDlXJDyLeDTc2n+k0="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.ulfggd9q7t.js.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\nsahp1912j-ulfggd9q7t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 06:34:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulfggd9q7t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-G8SFriwCHT6dmJJACIUdA2qXx2gqNT6vUnMp3L/kT3c="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.h4mi6u31sv.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\9nvgnd9j28-h4mi6u31sv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4mi6u31sv"
+        },
+        {
+          "Name": "label",
+          "Value": "rudewords.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.h4mi6u31sv.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "414"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4mi6u31sv"
+        },
+        {
+          "Name": "label",
+          "Value": "rudewords.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.h4mi6u31sv.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\9nvgnd9j28-h4mi6u31sv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4mi6u31sv"
+        },
+        {
+          "Name": "label",
+          "Value": "rudewords.txt.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\9nvgnd9j28-h4mi6u31sv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002958579882"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\rudewords.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "414"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f1GW53MjLCPh428xUx0we07nNxW3fW23Zyz9Lpvb15Q="
+        }
+      ]
+    },
+    {
+      "Route": "rudewords.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\9nvgnd9j28-h4mi6u31sv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 05:41:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjfpQXExIbhqmg9tB0zP0hfb8BjEfSoQ4zgGFRyH+YQ="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.oa8gecsfn6.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\hqp0jzs7y5-oa8gecsfn6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001536098310"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oa8gecsfn6"
+        },
+        {
+          "Name": "label",
+          "Value": "usernames.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.oa8gecsfn6.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oa8gecsfn6"
+        },
+        {
+          "Name": "label",
+          "Value": "usernames.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.oa8gecsfn6.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\hqp0jzs7y5-oa8gecsfn6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oa8gecsfn6"
+        },
+        {
+          "Name": "label",
+          "Value": "usernames.txt.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\hqp0jzs7y5-oa8gecsfn6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001536098310"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.txt",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\wwwroot\\usernames.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AHTTJOXOZlz1ZQP6x5BjYM+ZSO/dLwixLmlj7W/Mg14="
+        }
+      ]
+    },
+    {
+      "Route": "usernames.txt.gz",
+      "AssetFile": "C:\\Users\\weijianchee\\OneDrive\\Documents\\AssignmentEWT\\AssignmentEWT-CheeWeiJian-ChatUniverse\\ChatRT\\obj\\Debug\\net9.0\\compressed\\hqp0jzs7y5-oa8gecsfn6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 12:29:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7QAv7pJiSsk26TXoSP/eVvuWRaABa5RE8dkKGNr46Gs="
+        }
+      ]
+    }
+  ]
+}

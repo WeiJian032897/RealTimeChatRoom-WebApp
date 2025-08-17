@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Universe</title>
+    <link href="image/favicon1.png" rel="shortcut icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            transition: all 0.3s ease;
+        }
+
+        form:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #aed581;
+            background-color: #fff;
+            box-shadow: 0 0 0 3px rgba(174, 213, 129, 0.2);
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #aed581;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 6px rgba(174, 213, 129, 0.2);
+        }
+
+        button[type="submit"]:hover {
+            background-color: #9ccc65;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(156, 204, 101, 0.3);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(156, 204, 101, 0.3);
+        }
+
+        #random-name {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 0;
+            width: auto;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        #random-name:hover {
+            color: #fff;
+            background-color: #aed581;
+            transform: translateY(-50%) scale(1.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        #error-message {
+            color: #ff5252;
+            font-size: 14px;
+            margin-top: 8px;
+            display: none;
+            padding-left: 2px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 头像相关样式 */
+        .avatar-container {
+            margin-bottom: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        #video-preview, #canvas {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #aed581;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
+            display: block;
+            margin: 0 auto 12px;
+        }
+
+        #canvas {
+            display: none;
+        }
+
+        .avatar-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .avatar-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            background-color: #aed581;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .avatar-btn:hover {
+            background-color: #9ccc65;
+            transform: translateY(-2px);
+        }
+
+        .avatar-btn.retake {
+            background-color: #ff7043;
+        }
+
+        .avatar-btn.retake:hover {
+            background-color: #f4511e;
+        }
+        
+        .avatar-btn.upload {
+            background-color: #64b5f6;
+        }
+        
+        .avatar-btn.upload:hover {
+            background-color: #42a5f5;
+        }
+        
+        /* 隐藏文件输入 */
+        #file-input {
+            display: none;
+        }
+
+        .camera-disabled {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off">
+        <h1>Welcome to Chat Universe 👽 </h1>
+        
+        <!-- 头像拍照区域 -->
+        <div class="avatar-container">
+            <h3 style="margin-top: 0; color: #666; font-size: 16px;">Set Your Personal Avatar</h3>
+            <p style="margin: 0 0 10px; color: #888; font-size: 13px;">You can use the camera to take a photo or upload a local picture as your avatar</p>
+            <div id="camera-placeholder" style="width: 120px; height: 120px; border-radius: 50%; background-color: #f1f1f1; margin: 0 auto 12px; display: flex; justify-content: center; align-items: center; border: 3px solid #aed581; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);">
+                <span style="font-size: 40px;">📷</span>
+            </div>
+            <video id="video-preview" autoplay playsinline style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <div class="avatar-buttons">
+                <button type="button" id="start-camera" class="avatar-btn">🎥 Open Camera</button>
+                <button type="button" id="take-photo" class="avatar-btn" style="display: none;">📸 Take Photo</button>
+                <button type="button" id="retake-photo" class="avatar-btn retake" style="display: none">🔄 Retake</button>
+                <button type="button" id="upload-photo" class="avatar-btn upload">📁 Local Files</button>
+                <input type="file" id="file-input" accept="image/*">
+            </div>
+            <div id="camera-error" class="camera-disabled" style="display: none">
+                Unable to access the camera, please use the local image upload function to set the avatar
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <input id="name" placeholder="Input your name" autofocus>
+            <button type="button" id="random-name" title="随机用户名">🎲</button>
+            <div id="error-message">This username is already in use</div>
+        </div>
+        <button type="submit">Join The Chat</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script>
+        // 存储随机用户名列表
+        let usernames = [];
+        let currentUsers = new Set();
+        let hasUserAvatar = false;
+
+        // 头像相关变量
+        let stream = null;
+        let video = document.getElementById('video-preview');
+        let canvas = document.getElementById('canvas');
+        let cameraPlaceholder = document.getElementById('camera-placeholder');
+        let startCameraBtn = document.getElementById('start-camera');
+        let takePhotoBtn = document.getElementById('take-photo');
+        let retakePhotoBtn = document.getElementById('retake-photo');
+        let uploadPhotoBtn = document.getElementById('upload-photo');
+        let fileInput = document.getElementById('file-input');
+        let context = canvas.getContext('2d');
+
+        // 初始化摄像头
+        async function initCamera() {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { 
+                        width: 320, 
+                        height: 320,
+                        facingMode: 'user' 
+                    } 
+                });
+                video.srcObject = stream;
+                
+                // 显示视频预览和拍照按钮
+                cameraPlaceholder.style.display = 'none';
+                video.style.display = 'block';
+                startCameraBtn.style.display = 'none';
+                takePhotoBtn.style.display = 'inline-flex';
+            } catch (err) {
+                console.error('摄像头访问错误:', err);
+                document.getElementById('camera-error').style.display = 'block';
+                
+                // 改变错误提示的样式，使其更加醒目
+                document.getElementById('camera-error').style.color = '#f44336';
+                document.getElementById('camera-error').style.fontWeight = 'bold';
+                document.getElementById('camera-error').style.padding = '10px';
+                document.getElementById('camera-error').style.backgroundColor = 'rgba(244, 67, 54, 0.1)';
+                document.getElementById('camera-error').style.borderRadius = '5px';
+                
+                
+                uploadPhotoBtn.style.backgroundColor = '#4caf50';
+                uploadPhotoBtn.style.fontWeight = 'bold';
+            }
+        }
+
+        // 拍照
+        function takePhoto() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // 显示拍摄的照片，隐藏视频预览
+            video.style.display = 'none';
+            canvas.style.display = 'block';
+            takePhotoBtn.style.display = 'none';
+            retakePhotoBtn.style.display = 'inline-flex';
+
+            // 保存为数据URL
+            hasUserAvatar = true;
+            
+            
+            stopCamera();
+        }
+
+       
+        function stopCamera() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+        }
+
+        
+        function retakePhoto() {
+            // 重置UI
+            canvas.style.display = 'none';
+            retakePhotoBtn.style.display = 'none';
+            cameraPlaceholder.style.display = 'block';
+            startCameraBtn.style.display = 'inline-flex';
+            
+            hasUserAvatar = false;
+        }
+
+        
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file || !file.type.match('image.*')) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    
+                    stopCamera();
+                    
+                   
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    
+                    // 绘制图像
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                    context.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    
+                    
+                    cameraPlaceholder.style.display = 'none';
+                    video.style.display = 'none';
+                    canvas.style.display = 'block';
+                    startCameraBtn.style.display = 'none';
+                    takePhotoBtn.style.display = 'none';
+                    retakePhotoBtn.style.display = 'inline-flex';
+                    
+                   
+                    hasUserAvatar = true;
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // 加载随机用户名
+        function loadUsernames() {
+          
+            const timestamp = new Date().getTime();
+            fetch(`usernames.txt?t=${timestamp}`)
+                .then(response => response.text())
+                .then(data => {
+                    usernames = data.split('\n')
+                        .map(name => name.trim())
+                        .filter(name => name);
+                    console.log(`已加载 ${usernames.length} 个随机用户名`);
+                })
+                .catch(error => {
+                    console.error('加载随机用户名失败:', error);
+                });
+        }
+
+        // 获取随机用户名
+        function getRandomUsername() {
+            if (usernames.length === 0) return '';
+            
+            // 过滤掉已经在使用的用户名
+            const availableUsernames = usernames.filter(name => !currentUsers.has(name));
+            
+            if (availableUsernames.length === 0) {
+                // 如果所有名字都被使用了，给名字加上随机数
+                const randomIndex = Math.floor(Math.random() * usernames.length);
+                const baseName = usernames[randomIndex];
+                const randomNum = Math.floor(Math.random() * 100);
+                return `${baseName}${randomNum}`;
+            }
+            
+            const randomIndex = Math.floor(Math.random() * availableUsernames.length);
+            return availableUsernames[randomIndex];
+        }
+
+        // 检查用户名是否可用
+        async function checkUsername(name) {
+            try {
+                const response = await fetch(`/api/users/check?name=${encodeURIComponent(name)}`);
+                if (!response.ok) throw new Error('网络请求失败');
+                const data = await response.json();
+                return !data.exists;
+            } catch (error) {
+                console.error('检查用户名失败:', error);
+                return true; 
+            }
+        }
+
+        // 显示错误消息
+        function showError(show) {
+            $('#error-message').css('display', show ? 'block' : 'none');
+        }
+
+        // 获取当前在线用户
+        async function getCurrentUsers() {
+            try {
+                
+                const connection = new signalR.HubConnectionBuilder()
+                    .withUrl("/hub?name=__temp_checker__")
+                    .build();
+                
+               
+                connection.on("UpdateStatus", (count, status, names) => {
+                    // 更新当前用户集合
+                    currentUsers = new Set(names);
+                    console.log(`当前在线用户: ${names.join(', ')}`);
+                });
+                
+               
+                await connection.start();
+                
+              
+                setTimeout(() => {
+                    connection.stop();
+                }, 3000);
+            } catch (error) {
+                console.error('获取在线用户失败:', error);
+            }
+        }
+
+       
+        $(document).ready(() => {
+            
+            
+            
+            loadUsernames();
+            
+           
+            getCurrentUsers();
+            
+           
+            startCameraBtn.addEventListener('click', initCamera);
+
+           
+            takePhotoBtn.addEventListener('click', takePhoto);
+            
+           
+            retakePhotoBtn.addEventListener('click', retakePhoto);
+            
+            
+            uploadPhotoBtn.addEventListener('click', () => {
+                fileInput.click();
+            });
+            
+            
+            fileInput.addEventListener('change', handleFileSelect);
+
+           
+            $('#random-name').click(() => {
+                const randomName = getRandomUsername();
+                $('#name').val(randomName).focus();
+                showError(false);
+            });
+
+            
+            let checkTimeout;
+            $('#name').on('input', function() {
+                const name = $(this).val().trim();
+                
+               
+                clearTimeout(checkTimeout);
+                
+                
+                if (!name) {
+                    showError(false);
+                    return;
+                }
+                
+                
+                checkTimeout = setTimeout(async () => {
+                    const isAvailable = await checkUsername(name);
+                    showError(!isAvailable);
+                }, 500);
+            });
+
+           
+            $('form').submit(async e => {
+                e.preventDefault();
+                const name = $('#name').val().trim();
+
+                if (!name) {
+                    alert('请输入用户名');
+                    return;
+                }
+
+               
+                const isAvailable = await checkUsername(name);
+                if (!isAvailable) {
+                    showError(true);
+                    return;
+                }
+
+               
+                sessionStorage.setItem('name', name);
+                
+                
+                if (hasUserAvatar) {
+                    sessionStorage.setItem('avatar', canvas.toDataURL('image/png'));
+                }
+                
+                
+                stopCamera();
+                
+                location = '/chat.html';
+            });
+        });
+    </script>
+</body>
+</html>
